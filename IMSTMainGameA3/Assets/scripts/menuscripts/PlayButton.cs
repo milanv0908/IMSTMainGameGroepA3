@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+
+   public void PlayGame()
+{
+    Time.timeScale = 1f; // Stel de tijd schaal in op 1
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+}
 
     public void QuitGame()
     {
