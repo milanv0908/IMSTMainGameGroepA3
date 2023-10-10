@@ -7,7 +7,7 @@ public class PlayerHP : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public hpBar hpBar;
-    private float damageTimer = 0.1f; // Wacht 1 seconde tussen schade
+    public float damageTimer = 0.1f; // Wacht 1 seconde tussen schade
 
     void Start()
     {
@@ -33,4 +33,10 @@ public class PlayerHP : MonoBehaviour
         currentHealth -= damage;
         hpBar.setHealth(currentHealth);
     }
+
+    public void RestoreHealthToMax()
+{
+    currentHealth = maxHealth;
+    hpBar.setHealth(currentHealth);
+}
 }
