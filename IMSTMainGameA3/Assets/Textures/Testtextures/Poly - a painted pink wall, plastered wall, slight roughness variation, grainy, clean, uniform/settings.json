@@ -1,0 +1,23 @@
+{
+  "prompt_text": "a painted pink wall, plastered wall, slight roughness variation, grainy, clean, uniform",
+  "patch": {
+    "ext": "png",
+    "dtype": "uint8",
+    "width": 512,
+    "height": 512,
+    "url": "https://static-dev.withpoly.com/v3/textures/patches/573022bc-91c8-4140-a0a6-fd9bddaf8aa5.png",
+    "patch_id": "bETZpySUtN"
+  },
+  "seamless_prompt_text": "a painted pink wall, plastered wall, slight roughness variation, grainy, clean, uniform",
+  "seamless_patch_scale": 0.8,
+  "upscale_prompt_text": "a painted pink wall, plastered wall, slight roughness variation, grainy, clean, uniform",
+  "upscale_resolution": 2048,
+  "is_seamless": true,
+  "pbr_mode": "matte",
+  "pbr_generate_color": true,
+  "pbr_generate_normal": true,
+  "pbr_generate_height": true,
+  "pbr_generate_ao": true,
+  "pbr_generate_roughness": true,
+  "pbr_generate_metallic": false
+}
