@@ -1,0 +1,23 @@
+{
+  "prompt_text": "Verde indio, green marble, with dark green lines, extreme fine detail, polished, archviz, interior, photorealistic,",
+  "patch": {
+    "ext": "png",
+    "dtype": "uint8",
+    "width": 512,
+    "height": 512,
+    "url": "https://static-dev.withpoly.com/v3/textures/patches/ec63874e-396a-46fb-bb4e-cc7459836f01.png",
+    "patch_id": "QQvViqdYUL"
+  },
+  "seamless_prompt_text": "Verde indio, green marble, with dark green lines, extreme fine detail, polished, archviz, interior, photorealistic,",
+  "seamless_patch_scale": 0.92,
+  "upscale_prompt_text": "Verde indio, green marble, with dark green lines, extreme fine detail, polished, archviz, interior, photorealistic,",
+  "upscale_resolution": 2048,
+  "is_seamless": true,
+  "pbr_mode": "polished",
+  "pbr_generate_color": true,
+  "pbr_generate_normal": true,
+  "pbr_generate_height": false,
+  "pbr_generate_ao": true,
+  "pbr_generate_roughness": true,
+  "pbr_generate_metallic": false
+}
