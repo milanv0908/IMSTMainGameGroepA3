@@ -7,7 +7,7 @@ public class PlayerHP : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public hpBar hpBar;
-    public float damageTimer = 0.1f; // Wacht 1 seconde tussen schade
+    public float damageTimer = 0.5f; // Wacht x seconde tussen schade
 
     void Start()
     {
@@ -24,7 +24,13 @@ public class PlayerHP : MonoBehaviour
         if (damageTimer <= 0)
         {
             TakeDamage(1);
-            damageTimer = 0.1f; // Reset de timer naar 1 seconde
+            damageTimer = 0.5f; // Reset de timer naar x seconde
+        }
+
+        if(currentHealth == 0){
+            Debug.Log("Game Over");
+            currentHealth = 0;
+            hpBar.setHealth(currentHealth);
         }
     }
 
