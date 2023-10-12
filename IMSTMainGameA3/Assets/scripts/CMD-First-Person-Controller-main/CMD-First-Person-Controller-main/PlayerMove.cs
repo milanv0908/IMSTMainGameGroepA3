@@ -26,11 +26,12 @@ public class PlayerMove : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode crouchKey = KeyCode.LeftControl;
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-        normalHeight = transform.localScale.y;
-    }
+  void Start()
+{
+    rb = GetComponent<Rigidbody>(); // Verander GetComponent() naar GetComponent<Rigidbody>
+    normalHeight = transform.localScale.y;
+}
+
 
     void FixedUpdate()
     {
@@ -63,45 +64,59 @@ public class PlayerMove : MonoBehaviour
         }
 
         // Jumping
-        if (jumpEnabled && Input.GetKey(jumpKey) && isGrounded()) 
+        if (jumpEnabled && Input.GetKey(jumpKey) && isGrounded())
         {
             movement += transform.up * jumpSpeed;
         }
 
+        // Check if there's an obstacle in the movement direction
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, movement.normalized, out hit, movement.magnitude * Time.fixedDeltaTime))
+        {
+            // If there's an obstacle, set movement to zero
+            movement = Vector3.zero;
+        }
+
         // make sure the rigidbody isn't sliding around when there's no input
-        if (!hasInput) {
-          rb.constraints = 
-            RigidbodyConstraints.FreezePositionX | 
-            RigidbodyConstraints.FreezePositionZ |
-            RigidbodyConstraints.FreezeRotationY |
-            RigidbodyConstraints.FreezeRotationZ;
-        } else {
-          rb.constraints = 
-            RigidbodyConstraints.FreezeRotationY |
-            RigidbodyConstraints.FreezeRotationZ;
+        if (!hasInput)
+        {
+            rb.constraints =
+                RigidbodyConstraints.FreezePositionX |
+                RigidbodyConstraints.FreezePositionZ |
+                RigidbodyConstraints.FreezeRotationY |
+                RigidbodyConstraints.FreezeRotationZ;
+        }
+        else
+        {
+            rb.constraints =
+                RigidbodyConstraints.FreezeRotationY |
+                RigidbodyConstraints.FreezeRotationZ;
         }
 
         // maintain vertical speed
         movement.y += rb.velocity.y;
 
         // apply movement to rigidbody
-        rb.velocity = movement ;
+        rb.velocity = movement;
     }
 
-    
-
-    void Update() {
-        if (crouchEnabled && Input.GetKeyDown(crouchKey)) {
-          // Crouching
-          transform.localScale = new Vector3(transform.localScale.x, crouchHeight, transform.localScale.z);
-        } else if (crouchEnabled && Input.GetKeyUp(crouchKey)) {
-          // Not crouching
-          transform.localScale = new Vector3(transform.localScale.x, normalHeight, transform.localScale.z);
+    void Update()
+    {
+        if (crouchEnabled && Input.GetKeyDown(crouchKey))
+        {
+            // Crouching
+            transform.localScale = new Vector3(transform.localScale.x, crouchHeight, transform.localScale.z);
+        }
+        else if (crouchEnabled && Input.GetKeyUp(crouchKey))
+        {
+            // Not crouching
+            transform.localScale = new Vector3(transform.localScale.x, normalHeight, transform.localScale.z);
         }
     }
 
     // Check if player is on the ground
-    bool isGrounded() {
-      return Physics.Raycast(transform.position, -Vector3.up, 0.1f + transform.localScale.y);
+    bool isGrounded()
+    {
+        return Physics.Raycast(transform.position, -Vector3.up, 0.1f + transform.localScale.y);
     }
 }
