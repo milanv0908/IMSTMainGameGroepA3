@@ -26,6 +26,8 @@ public class PlayerMove : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode crouchKey = KeyCode.LeftControl;
 
+    public bool isMoving; 
+
   void Start()
 {
     rb = GetComponent<Rigidbody>(); // Verander GetComponent() naar GetComponent<Rigidbody>
@@ -112,11 +114,16 @@ public class PlayerMove : MonoBehaviour
             // Not crouching
             transform.localScale = new Vector3(transform.localScale.x, normalHeight, transform.localScale.z);
         }
+
+        // Check for movement keys here
+        isMoving = Input.GetKey(forwardKey) || Input.GetKey(backKey) || Input.GetKey(leftKey) || Input.GetKey(rightKey);
     }
 
     // Check if player is on the ground
-    bool isGrounded()
+    public bool isGrounded()
     {
         return Physics.Raycast(transform.position, -Vector3.up, 0.1f + transform.localScale.y);
     }
+
+    
 }
