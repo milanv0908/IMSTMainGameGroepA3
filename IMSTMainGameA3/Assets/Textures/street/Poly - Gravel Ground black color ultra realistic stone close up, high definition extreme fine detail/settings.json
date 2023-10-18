@@ -1,0 +1,23 @@
+{
+  "prompt_text": "Gravel Ground black color ultra realistic stone close up, high definition extreme fine detail",
+  "prompt_image": {
+    "ext": "png",
+    "dtype": "uint8",
+    "width": 512,
+    "height": 512,
+    "url": "https://static-dev.withpoly.com/v3/textures/patches/3cfc149b-2403-4458-b1aa-70d530f52c86.png",
+    "patch_id": "2QtqZ2nwu8"
+  },
+  "seamless_prompt_text": "",
+  "seamless_patch_scale": 1.02,
+  "upscale_prompt_text": "",
+  "upscale_resolution": 4096,
+  "is_seamless": true,
+  "pbr_mode": "dramatic",
+  "pbr_generate_color": true,
+  "pbr_generate_normal": true,
+  "pbr_generate_height": true,
+  "pbr_generate_ao": true,
+  "pbr_generate_roughness": true,
+  "pbr_generate_metallic": false
+}
