@@ -29,6 +29,7 @@ public class koffiezetapparaat : MonoBehaviour
         telefoon.enabled = true;
         telefoonfrank = true;
         text.enabled = true;
+        text.text = "Press F to awnser your phone!";
     
 
 }
