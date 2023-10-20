@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class koffiezetapparaat : MonoBehaviour
 {
     public Image telefoon;
+    public TextMeshProUGUI text;
     public bool telefoonfrank;
     Animator animator;
     void Start()
@@ -13,6 +15,7 @@ public class koffiezetapparaat : MonoBehaviour
     animator = GetComponent<Animator>();
         telefoon.enabled = false;
         telefoonfrank = false;
+        text.enabled = false;
     }
 
     public void koffieZetten()
@@ -25,6 +28,7 @@ public class koffiezetapparaat : MonoBehaviour
         yield return new WaitForSeconds(5);
         telefoon.enabled = true;
         telefoonfrank = true;
+        text.enabled = true;
     
 
 }
