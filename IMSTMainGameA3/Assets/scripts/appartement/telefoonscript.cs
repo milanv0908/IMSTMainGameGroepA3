@@ -5,7 +5,7 @@ using UnityEngine;
 public class telefoonscript : MonoBehaviour
 {
     AudioSource audiosource;
-    public koffiezetapparaat koffie;
+    public koffiemok koffie;
 
     void Start()
     {

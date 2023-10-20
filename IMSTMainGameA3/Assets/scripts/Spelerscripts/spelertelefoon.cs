@@ -6,7 +6,7 @@ using TMPro;
 
 public class spelertelefoon : MonoBehaviour
 {
-    public koffiezetapparaat koffie;
+    public koffiemok koffie;
     public Image telefoon;
     public TextMeshProUGUI text;
 
