@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WilliamAppartement.unity
     guid: f1a358e7ccdf18045b60df95292f2e29
   - enabled: 1
+    path: Assets/Scenes/Buiten.unity
+    guid: a3221aa3fd53d594284bb10d3cccbcc9
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
