@@ -337,6 +337,195 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &195856689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+  m_PrefabInstance: {fileID: 497280337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &195856690
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195856689}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6feb0801133983845b5921b0c7466eab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &195856692
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195856689}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &195856693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195856689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475b9114c367f1240bc797cefdd81f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drinken: {fileID: 0}
+  koffie: {fileID: 397991798}
+  telefoon: {fileID: 1525746891}
+  text: {fileID: 691636283}
+  telefoonfrank: 0
+--- !u!65 &195856694
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195856689}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2274191, y: 1.550759, z: 1.8884476}
+  m_Center: {x: 0.05709415, y: 1.9986792, z: -0.24380842}
+--- !u!114 &195856695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195856689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4169d5fde37c3419c8c71ba590deb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: koffiemok
+  cursor: {fileID: 21300000, guid: 84b656b9dbe3e7f4abda7d8ffbaec60d, type: 3}
+  interactFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 195856693}
+        m_TargetAssemblyTypeName: koffiemok, Assembly-CSharp
+        m_MethodName: koffiedrinken
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &238837685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,9 +1057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b1e5920c59d314691313ed7a0992a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  telefoon: {fileID: 1525746891}
-  text: {fileID: 691636283}
-  telefoonfrank: 0
   koffieklaar: 0
 --- !u!95 &397991799
 Animator:
@@ -1228,6 +1414,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &497280337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13944793
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.13944793
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.13944793
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.845
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.146
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.259
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9639431
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2661086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 30.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      propertyPath: m_Name
+      value: koffiemok
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195856690}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195856695}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195856694}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195856693}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 195856692}
+    - targetCorrespondingSourceObject: {fileID: -4619159924547357705, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 589428864}
+    - targetCorrespondingSourceObject: {fileID: 6892290296759092495, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1904569998}
+  m_SourcePrefab: {fileID: 100100000, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
 --- !u!1 &516014445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e000c81fe6075bf479641a439010d755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  koffie: {fileID: 397991798}
+  koffie: {fileID: 195856693}
 --- !u!1001 &585032046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1718,6 +1994,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1902985193}
   m_SourcePrefab: {fileID: 100100000, guid: e166e388844d0214997781f741b210d3, type: 3}
+--- !u!1 &589428860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4619159924547357705, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+  m_PrefabInstance: {fileID: 497280337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &589428864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589428860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a4ed3fb018dbc4580a55c91ad7a385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  koffie: {fileID: 397991798}
 --- !u!1001 &651640461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4577,7 +4871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477a4853b1676f848a9822c4d8f060b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  koffie: {fileID: 397991798}
+  koffie: {fileID: 195856693}
   telefoon: {fileID: 1525746891}
   text: {fileID: 691636283}
 --- !u!1 &1664722225
@@ -4987,6 +5281,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e166e388844d0214997781f741b210d3, type: 3}
   m_PrefabInstance: {fileID: 585032046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1904569994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6892290296759092495, guid: 8c44a134bdb384d47980a45bfea2ec9e, type: 3}
+  m_PrefabInstance: {fileID: 497280337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1904569998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904569994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a4ed3fb018dbc4580a55c91ad7a385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  koffie: {fileID: 397991798}
 --- !u!1 &1949501406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7177084269400893961, guid: d2c7dbd311fd5e243a5aff154a7b7163, type: 3}
@@ -5585,3 +5897,4 @@ SceneRoots:
   - {fileID: 1967067774}
   - {fileID: 1015154659}
   - {fileID: 675655885}
+  - {fileID: 497280337}
