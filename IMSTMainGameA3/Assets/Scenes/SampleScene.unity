@@ -704,6 +704,7 @@ MonoBehaviour:
   rightKey: 100
   jumpKey: 32
   crouchKey: 306
+  isMoving: 0
 --- !u!136 &734549821
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2623,12 +2624,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 13
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":599.600037,"yPos":-349.8},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"1","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":1005.6001,"yPos":-357.8},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"2","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":521.600037,"yPos":204.199951},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"dit
-    is je standaard optie","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":983.6001,"yPos":198.199951},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"deze
-    zou je alleen moeten zien als 2 is gekozen","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"kies2","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"blok1heeft2gekozen","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":727.600037,"yPos":-552},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"kies
-    optie 1 of 2","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":1010.6001,"yPos":-185.799988},"ID":3,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"kies2","Value":true}],"TMPFontGUID":null,"Text":"je
-    koos 2","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":588.600037,"yPos":-172.799988},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"je
-    koos 1","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"kies2","CheckType":0,"RequiredValue":true}],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":805.600037,"yPos":29.2000122},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"show
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":-20.8000031},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"1","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":570.000061,"yPos":-28.8000031},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"2","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":86,"yPos":533.199951},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"dit
+    is je standaard optie","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":548.000061,"yPos":527.199951},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"deze
+    zou je alleen moeten zien als 2 is gekozen","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"kies2","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"blok1heeft2gekozen","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":292,"yPos":-223.000015},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"kies
+    optie 1 of 2","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":575.000061,"yPos":143.2},"ID":3,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"kies2","Value":true}],"TMPFontGUID":null,"Text":"je
+    koos 2","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":153,"yPos":156.2},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"je
+    koos 1","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"kies2","CheckType":0,"RequiredValue":true}],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":370,"yPos":358.2},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"show
     2 opties als je 2 hebt gekozen net anders niet.","parentUIDs":[3,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"blokkie","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -2647,7 +2648,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 3a6ecbd20f7df4e4f8aa907ded7f4f7a, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1769973738
 BoxCollider:
   m_ObjectHideFlags: 0
