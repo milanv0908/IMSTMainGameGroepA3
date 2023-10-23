@@ -6010,15 +6010,15 @@ RectTransform:
   m_GameObject: {fileID: 1525746889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0964999, y: 1.0964999, z: 1.0964999}
+  m_LocalScale: {x: 2.3644247, y: 2.3644247, z: 2.3644247}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2041947037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -120, y: 92}
-  m_SizeDelta: {x: 291.6305, y: 201.634}
+  m_AnchoredPosition: {x: -92, y: 132}
+  m_SizeDelta: {x: 67.82117, y: 127.7471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525746891
 MonoBehaviour:
@@ -6027,7 +6027,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525746889}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -6701,8 +6701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerMove: {fileID: 1600109871}
   footstepaudio:
-  - {fileID: 8300000, guid: 4e7ad09470dd82c4c84c7ec0fb929621, type: 3}
-  - {fileID: 8300000, guid: 94d23b1aa17c5074f9f26f07f0791272, type: 3}
+  - {fileID: 8300000, guid: 6d35e50d37d2b1c429edb79e0f76f292, type: 3}
+  - {fileID: 8300000, guid: 9bd05cd1de81a4b44a594418467fa1a5, type: 3}
 --- !u!114 &1600109878
 MonoBehaviour:
   m_ObjectHideFlags: 0

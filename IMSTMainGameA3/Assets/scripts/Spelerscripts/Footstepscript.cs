@@ -24,24 +24,30 @@ stone
         audiosource = GetComponent<AudioSource>();
     }
 
-    private void Update()
-    {
-        footstepTimer += Time.deltaTime;
-        if (PlayerMove.isMoving && audiosource.clip && footstepTimer > timePerStep)
-        {
-            audiosource.Play();
-            footstepTimer = 0;
-        }
+ private void Update()
+{
+    footstepTimer += Time.deltaTime;
 
-            if (!PlayerMove.isGrounded())
+    if (PlayerMove.isMoving && audiosource.clip && footstepTimer > timePerStep)
     {
-        audiosource.Pause();
+        audiosource.Play();
+        footstepTimer = 0;
+    }
+    else if (!PlayerMove.isMoving)
+    {
+        audiosource.Stop(); // Stop the audio when the player is not moving.
+    }
+
+    if (!PlayerMove.isGrounded())
+    {
+        audiosource.enabled = false;
     }
     else
     {
-        audiosource.UnPause();
+        audiosource.enabled = true;
     }
 }
+
 
     private void OnCollisionEnter(Collision col)
     {
