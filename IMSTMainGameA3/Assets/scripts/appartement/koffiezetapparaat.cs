@@ -8,15 +8,19 @@ public class koffiezetapparaat : MonoBehaviour
 {
 
     public bool koffieklaar;
+    public AudioClip koffiegeluid;
     Animator animator;
+    AudioSource audiosource;
     void Start()
     {
     animator = GetComponent<Animator>();
+    audiosource = GetComponent<AudioSource>();
     }
 
     public void koffieZetten()
     {
         animator.SetTrigger("koffie");
+        audiosource.PlayOneShot(koffiegeluid);
         StartCoroutine(koffie());
     }
 
