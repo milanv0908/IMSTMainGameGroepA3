@@ -8,6 +8,7 @@ public class koffiezetapparaat : MonoBehaviour
 {
 
     public bool koffieklaar;
+    private bool hasBeenUsed = false;
     public AudioClip koffiegeluid;
     Animator animator;
     AudioSource audiosource;
@@ -19,9 +20,13 @@ public class koffiezetapparaat : MonoBehaviour
 
     public void koffieZetten()
     {
-        animator.SetTrigger("koffie");
-        audiosource.PlayOneShot(koffiegeluid);
-        StartCoroutine(koffie());
+        if (hasBeenUsed == false)
+        {
+            animator.SetTrigger("koffie");
+            audiosource.PlayOneShot(koffiegeluid);
+            StartCoroutine(koffie());
+            hasBeenUsed = true;
+        }
     }
 
     IEnumerator koffie() {

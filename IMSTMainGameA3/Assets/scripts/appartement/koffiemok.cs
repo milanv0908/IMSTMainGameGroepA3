@@ -15,6 +15,8 @@ public class koffiemok : MonoBehaviour
     public TextMeshProUGUI text;
     public bool telefoonfrank;
 
+    private bool hasBeenUsed = false;
+
 
     void Start()
     {
@@ -35,9 +37,13 @@ public class koffiemok : MonoBehaviour
     }
 
             public void koffiedrinken() {
-                animator.SetTrigger("drinken");
-                audiosource.PlayOneShot(drinken);
-                StartCoroutine(phone());
+        if (hasBeenUsed == false)
+        {
+            animator.SetTrigger("drinken");
+            audiosource.PlayOneShot(drinken);
+            StartCoroutine(phone());
+            hasBeenUsed = true;
+        }
             }
 
                 IEnumerator phone() {
