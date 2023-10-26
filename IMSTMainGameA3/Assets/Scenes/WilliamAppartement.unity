@@ -1187,6 +1187,7 @@ MonoBehaviour:
   deurklink: {fileID: 813583039}
   isopen: 0
   text: {fileID: 691636283}
+  spelerbool: {fileID: 1600109878}
 --- !u!1 &259508701
 GameObject:
   m_ObjectHideFlags: 0
@@ -6971,11 +6972,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: {fileID: 1600109879}
-  playerMovement: {fileID: 1600109871}
+  player: {fileID: 1600109867}
   Camerabob: {fileID: 1664722230}
   koffie: {fileID: 195856693}
   telefoon: {fileID: 1525746891}
   text: {fileID: 691636283}
+  DeurOpen: 0
 --- !u!114 &1600109879
 MonoBehaviour:
   m_ObjectHideFlags: 0

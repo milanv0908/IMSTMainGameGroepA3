@@ -17,6 +17,7 @@ public class spelertelefoon : MonoBehaviour
     public koffiemok koffie;
     public Image telefoon;
     public TextMeshProUGUI text;
+    public bool DeurOpen = false;
 
     bool heeftOpgehangen;
 
@@ -48,6 +49,8 @@ public class spelertelefoon : MonoBehaviour
                 {
                     ConversationManager.Instance.StartConversation(Conversation);
                     runOnce = true;
+                    DeurOpen = true;
+                    
                 }
             }
 

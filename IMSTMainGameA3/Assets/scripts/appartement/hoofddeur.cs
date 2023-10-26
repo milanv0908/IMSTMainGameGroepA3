@@ -12,6 +12,8 @@ public class hoofddeur : MonoBehaviour
     public bool isopen;
     private bool isCoroutineRunning = false;
     public TextMeshProUGUI text;
+    // public speler player;
+    public spelertelefoon spelerbool;
 
     void Start()
     {
@@ -23,7 +25,7 @@ public class hoofddeur : MonoBehaviour
 
     void Update()
     {
-        if (deurklink.isActivated == true)
+        if (deurklink.isActivated == true && spelerbool.DeurOpen == false)
         {
             if (!isCoroutineRunning) // Check if the coroutine is already running
             {
@@ -32,6 +34,16 @@ public class hoofddeur : MonoBehaviour
                 Debug.Log("hoi");
                 StartCoroutine(tekst());
             }
+        }
+
+        if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.DeurOpen == true)
+        {
+            StartCoroutine(isopen1());
+        }
+
+        if (isopen == true && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.DeurOpen == true)
+        {
+            StartCoroutine(isdicht());
         }
     }
 
@@ -42,37 +54,25 @@ public class hoofddeur : MonoBehaviour
         text.enabled = false;
         isCoroutineRunning = false; // Reset the flag when the coroutine is done
     }
+
+    IEnumerator isopen1()
+    {
+        isCoroutineRunning = true;
+        yield return new WaitForSeconds(0.1f);
+        animator.SetTrigger("open");
+        isopen = true;
+        Debug.Log("open");
+        isCoroutineRunning = false;
+    }
+
+    IEnumerator isdicht()
+    {
+        isCoroutineRunning = true;
+        yield return new WaitForSeconds(0.1f);
+        animator.SetTrigger("sluit");
+        isopen = false;
+        Debug.Log("Sluiten");
+        isCoroutineRunning = false;
+    }
 }
 
-        // if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning)
-        // {
-        //     StartCoroutine(isopen1());
-        // }
-
-        
-
-        // if (isopen == true && deurklink.isActivated == true && !isCoroutineRunning)
-        // {
-        //     StartCoroutine(isdicht());
-        // }
-
-
-    // IEnumerator isopen1()
-    // {
-    //     isCoroutineRunning = true;
-    //     yield return new WaitForSeconds(0.1f);
-    //     animator.SetTrigger("open");
-    //     isopen = true;
-    //     Debug.Log("open");
-    //     isCoroutineRunning = false;
-    // }
-
-    // IEnumerator isdicht()
-    // {
-    //     isCoroutineRunning = true;
-    //     yield return new WaitForSeconds(0.1f);
-    //     animator.SetTrigger("sluit");
-    //     isopen = false;
-    //     Debug.Log("Sluiten");
-    //     isCoroutineRunning = false;
-    // }
