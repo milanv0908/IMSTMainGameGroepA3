@@ -1,43 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using DialogueEditor;
 
-public class spelertelefoon : MonoBehaviour
-{
 
+public class blokkieAppartmentInteract : MonoBehaviour
+{
     public NPCConversation Conversation;
     // public speler player;
-    // public ObjectInteraction scriptToDisable; // Voeg een referentie naar het script dat je wilt uitschakelen toe.
+    public ObjectInteraction scriptToDisable; // Voeg een referentie naar het script dat je wilt uitschakelen toe.
     public PlayerMove playerMovement; // Voeg een referentie naar het bewegingsscript van de speler toe.
     public Camerabob Camerabob; // Voeg een referentie naar het bewegingsscript van de speler toe.
 
-    public koffiemok koffie;
-    public Image telefoon;
-    public TextMeshProUGUI text;
-
-    void Update()
+    private void Update()
     {
-        // Check if the "telefoonfrank" variable is true in the "koffie" object.
-        if (koffie.telefoonfrank == true && Input.GetKeyDown(KeyCode.F))
+        if (ConversationManager.Instance != null)
         {
-            telefoon.enabled = false;
-            koffie.telefoonfrank = false;
-            text.enabled = false;
-
-                if (!ConversationManager.Instance.IsConversationActive)
-        {
-            ConversationManager.Instance.StartConversation(Conversation);
-        }
-
-                     if (ConversationManager.Instance != null)
-         {
             if (ConversationManager.Instance.IsConversationActive)
             {
                 // Schakel het script uit wanneer de conversatie actief is
-                // scriptToDisable.enabled = false;
+                scriptToDisable.enabled = false;
                 // Schakel de beweging van de speler uit
                 playerMovement.enabled = false;
 
@@ -55,7 +37,7 @@ public class spelertelefoon : MonoBehaviour
             else
             {
                 // Zorg ervoor dat het script weer wordt ingeschakeld wanneer de conversatie niet actief is
-                // scriptToDisable.enabled = true;
+                scriptToDisable.enabled = true;
                 // Schakel de beweging van de speler weer in
                 playerMovement.enabled = true;
                 
@@ -63,7 +45,14 @@ public class spelertelefoon : MonoBehaviour
 
                 // Voer andere logica uit wanneer de conversatie niet actief is
             }
-         }
+        }
+    }
+
+    public void interactieTest1()
+    {
+        if (!ConversationManager.Instance.IsConversationActive)
+        {
+            ConversationManager.Instance.StartConversation(Conversation);
         }
     }
 }
