@@ -18,19 +18,37 @@ public class spelertelefoon : MonoBehaviour
     public Image telefoon;
     public TextMeshProUGUI text;
 
+    bool heeftOpgehangen;
+
+     private bool runOnce = false;
+
+    void Start()
+    {
+        // Set the runOnce boolean to false
+        runOnce = false;
+    }
+
     void Update()
     {
+        
         // Check if the "telefoonfrank" variable is true in the "koffie" object.
         if (koffie.telefoonfrank == true && Input.GetKeyDown(KeyCode.F))
         {
             telefoon.enabled = false;
             koffie.telefoonfrank = false;
             text.enabled = false;
-
-                if (!ConversationManager.Instance.IsConversationActive)
-        {
-            ConversationManager.Instance.StartConversation(Conversation);
+            heeftOpgehangen = true;
         }
+
+            if(runOnce == false){
+                if (!ConversationManager.Instance.IsConversationActive && heeftOpgehangen == true)
+                {
+                    ConversationManager.Instance.StartConversation(Conversation);
+                    runOnce = true;
+                }
+            }
+
+            
 
                      if (ConversationManager.Instance != null)
          {
@@ -64,6 +82,6 @@ public class spelertelefoon : MonoBehaviour
                 // Voer andere logica uit wanneer de conversatie niet actief is
             }
          }
-        }
+        
     }
 }
