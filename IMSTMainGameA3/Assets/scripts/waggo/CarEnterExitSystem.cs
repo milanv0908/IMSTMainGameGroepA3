@@ -37,43 +37,44 @@
 
 // }
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public class CarEnterExitSystem : MonoBehaviour
-{
-    public MonoBehaviour CarController2;
-    public Transform player;
-    public Transform Car;
-    bool CanDrive;
+// public class CarEnterExitSystem : MonoBehaviour
+// {
+//     public MonoBehaviour CarController2;
+//     public Transform player;
+//     public Transform Car;
+//     [Header("Cameras")]
+//     bool CanDrive;
 
-    void Start()
-    {
-        CarController2.enabled = false;
-    }
+//     void Start()
+//     {
+//         CarController2.enabled = false;
+//     }
 
-    void Update()
-    {
-    if (Input.GetKeyDown(KeyCode.F) && CanDrive) {
-            player.transform.SetParent(Car);
-            Player.gameObject.SetActive(false);
-    }
-    }
+//     void Update()
+//     {
+//     if (Input.GetKeyDown(KeyCode.F) && CanDrive) {
+//             player.transform.SetParent(Car);
+//             Player.gameObject.SetActive(false);
+//     }
+//     }
 
-    void OnTriggerStay(Collider col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            CanDrive = true;
-        }
-    }
+//     void OnTriggerStay(Collider col)
+//     {
+//         if (col.gameObject.tag == "Player")
+//         {
+//             CanDrive = true;
+//         }
+//     }
 
-    void OnTriggerExit(Collider col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            CanDrive = false;
-        }
-    }
-}
+//     void OnTriggerExit(Collider col)
+//     {
+//         if (col.gameObject.tag == "Player")
+//         {
+//             CanDrive = false;
+//         }
+//     }
+// }
