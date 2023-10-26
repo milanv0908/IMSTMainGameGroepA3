@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475b9114c367f1240bc797cefdd81f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drinken: {fileID: 0}
+  drinken: {fileID: 8300000, guid: 96fc1dab5a21bbd45ba4378b1223efab, type: 3}
   koffie: {fileID: 397991798}
   telefoon: {fileID: 1525746891}
   text: {fileID: 691636283}

@@ -117,7 +117,10 @@ public class PlayerMove : MonoBehaviour
 
         // Check for movement keys here
         isMoving = Input.GetKey(forwardKey) || Input.GetKey(backKey) || Input.GetKey(leftKey) || Input.GetKey(rightKey);
+
+        
     }
+    
 
     // Check if player is on the ground
     public bool isGrounded()

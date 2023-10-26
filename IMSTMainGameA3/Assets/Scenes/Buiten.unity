@@ -12359,7 +12359,6 @@ GameObject:
   - component: {fileID: 837150565}
   - component: {fileID: 837150564}
   - component: {fileID: 837150563}
-  - component: {fileID: 837150568}
   - component: {fileID: 837150567}
   - component: {fileID: 837150562}
   - component: {fileID: 837150561}
@@ -12519,8 +12518,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837150557}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 161.62, y: 2.11, z: 14.7}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -26.6, y: 20.83, z: 11.95}
   m_LocalScale: {x: 1, y: 1.5395, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12639,20 +12638,6 @@ MonoBehaviour:
   footstepaudio:
   - {fileID: 8300000, guid: 6d35e50d37d2b1c429edb79e0f76f292, type: 3}
   - {fileID: 8300000, guid: 9bd05cd1de81a4b44a594418467fa1a5, type: 3}
---- !u!114 &837150568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837150557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e243d3ee468be7144ad3c30f05dc5085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CarController2: {fileID: 2088080293946162997}
-  Player: {fileID: 837150557}
 --- !u!1 &840623530
 GameObject:
   m_ObjectHideFlags: 0
@@ -26784,7 +26769,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728671240}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -34768,9 +34753,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707296754691941768}
+  - component: {fileID: 2088080293946162999}
+  - component: {fileID: 2088080293946163000}
   - component: {fileID: 2088080293946162997}
   - component: {fileID: 2088080293946162996}
-  - component: {fileID: 2088080293946162998}
   - component: {fileID: 2088080293946162995}
   m_Layer: 0
   m_Name: step
@@ -34850,7 +34836,36 @@ MonoBehaviour:
   acceleration: 200
   breakingForce: 300
   maxTurnAngle: 15
---- !u!114 &2088080293946162998
+--- !u!114 &2088080293946162999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088080293946162994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4169d5fde37c3419c8c71ba590deb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: step
+  cursor: {fileID: 0}
+  interactFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CarEnterExitSystem, Assembly-CSharp
+        m_MethodName: Instappen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2088080293946163000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34862,8 +34877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e243d3ee468be7144ad3c30f05dc5085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarController2: {fileID: 2088080293946162997}
-  Player: {fileID: 837150557}
+  inVehicle: 0
+  vehicleScript: {fileID: 0}
+  player: {fileID: 0}
 --- !u!23 &2124960391420197159
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35200,7 +35216,6 @@ SceneRoots:
   - {fileID: 2146817082}
   - {fileID: 2077063590}
   - {fileID: 1058101097}
-  - {fileID: 837150565}
   - {fileID: 420015604}
   - {fileID: 1625984822}
   - {fileID: 272937087}
@@ -35270,3 +35285,4 @@ SceneRoots:
   - {fileID: 1552789075}
   - {fileID: 1702527679}
   - {fileID: 1707296754691941768}
+  - {fileID: 837150565}
