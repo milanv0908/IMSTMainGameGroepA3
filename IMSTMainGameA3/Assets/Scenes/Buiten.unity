@@ -16676,7 +16676,7 @@ WheelCollider:
     damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
+  m_ForceAppPointDistance: 8.18
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -18259,7 +18259,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165449081}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 42e8ddfd925ac9e498e314cee113aa40, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -19841,7 +19841,7 @@ WheelCollider:
     damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
+  m_ForceAppPointDistance: 8.18
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -20619,7 +20619,7 @@ WheelCollider:
     damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
+  m_ForceAppPointDistance: 8.18
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -31180,7 +31180,7 @@ WheelCollider:
     damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
+  m_ForceAppPointDistance: 8.18
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
@@ -34989,6 +34989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707296754691941768}
   - component: {fileID: 2088080293946163001}
+  - component: {fileID: 2088080293946163003}
   - component: {fileID: 2088080293946162997}
   - component: {fileID: 2088080293946162996}
   - component: {fileID: 2088080293946162995}
@@ -35029,10 +35030,10 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088080293946162994}
   serializedVersion: 4
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_Mass: 500
+  m_Drag: 0.05
+  m_AngularDrag: 4
+  m_CenterOfMass: {x: 0, y: -1, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -35041,12 +35042,12 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 64
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2088080293946162997
 MonoBehaviour:
@@ -35068,9 +35069,9 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 8332726232000932908}
   backRightTransform: {fileID: 8507643237960947435}
   backleftTransform: {fileID: 4926524441759772428}
-  acceleration: 200
+  acceleration: 600
   breakingForce: 300
-  maxTurnAngle: 15
+  maxTurnAngle: 60
 --- !u!114 &2088080293946163001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35111,6 +35112,21 @@ CapsuleCollider:
   m_Height: 6.244873
   m_Direction: 1
   m_Center: {x: 8.620751e-10, y: 0, z: -2.6224275}
+--- !u!114 &2088080293946163003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088080293946162994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3bfce4bb250aeb458dbc74dcdc794b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelL: {fileID: 1095939359}
+  WheelR: {fileID: 2006057782}
+  AntiRoll: 5000
 --- !u!23 &2124960391420197159
 MeshRenderer:
   m_ObjectHideFlags: 0
