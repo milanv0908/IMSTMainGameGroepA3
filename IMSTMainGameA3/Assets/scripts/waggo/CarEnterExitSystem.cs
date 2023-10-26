@@ -44,7 +44,7 @@ using UnityEngine;
 public class CarEnterExitSystem : MonoBehaviour
 {
     public MonoBehaviour CarController2;
-    public Transform Player;
+    public Transform player;
     public Transform Car;
     bool CanDrive;
 
