@@ -9,13 +9,13 @@ public class CarController2 : MonoBehaviour
     [SerializeField] WheelCollider backRight;
     [SerializeField] WheelCollider backLeft;
 
-    [SerializeField] Transform frontRightTransform;
-    [SerializeField] Transform frontLeftTransform;
-    [SerializeField] Transform backRightTransform;
-    [SerializeField] Transform backleftTransform;
+    // [SerializeField] Transform frontRightTransform;
+    // [SerializeField] Transform frontLeftTransform;
+    // [SerializeField] Transform backRightTransform;
+    // [SerializeField] Transform backleftTransform;
 
     public float acceleration = 500f;
-    public float breakingForce = 300f;
+    public float breakingForce = 600f;
     public float maxTurnAngle = 15f;
 
     private float currentAcceleration = 0f;
@@ -43,10 +43,10 @@ public class CarController2 : MonoBehaviour
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
 
-        UpdateWheel(frontLeft, frontLeftTransform);
-        UpdateWheel(backLeft, backleftTransform);
-        UpdateWheel(frontRight, frontRightTransform);
-        UpdateWheel(backRight, backRightTransform);
+        // UpdateWheel(frontLeft, frontLeftTransform);
+        // UpdateWheel(backLeft, backleftTransform);
+        // UpdateWheel(frontRight, frontRightTransform);
+        // UpdateWheel(backRight, backRightTransform);
     }
 
     void  UpdateWheel(WheelCollider col, Transform trans) {
