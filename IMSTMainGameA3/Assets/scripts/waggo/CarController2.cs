@@ -22,6 +22,7 @@ public class CarController2 : MonoBehaviour
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
 
+
     private void FixedUpdate() {
         currentAcceleration = acceleration * Input.GetAxis("Vertical");
 
