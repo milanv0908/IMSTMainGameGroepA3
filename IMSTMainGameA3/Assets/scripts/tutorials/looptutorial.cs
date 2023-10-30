@@ -5,33 +5,58 @@ using UnityEngine.UI;
 
 public class looptutorial : MonoBehaviour
 {
- public static bool gameIsPaused;
+    public static bool gameIsPaused;
     public Image image;
+    public Animator animator;
+
+    private bool hasRunPopIn = false;
+
     void Start()
     {
         image.enabled = true;
-        pause();
+        StartCoroutine(RunPopInThenPause());
         Debug.Log("pause");
     }
 
     void Update()
     {
-     if (Input.GetKeyDown(KeyCode.E)) {
-            image.enabled = false;
+        if (gameIsPaused == true && Input.GetKeyDown(KeyCode.E))
+        {
+            animator.SetTrigger("PopOut");
             resume();
             Debug.Log("resume");
-     }   
+        }
     }
 
-        public void resume () {
-        image.enabled = false;
-Time.timeScale = 1f;
-gameIsPaused = false;
+    private void resume()
+    {
+        Time.timeScale = 1f;
+        gameIsPaused = false;
     }
 
-    void pause () {
-        image.enabled = true;
-Time.timeScale = 0f;
-gameIsPaused = true;
+    private void pause()
+    {
+        Time.timeScale = 0f;
+        gameIsPaused = true;
+    }
+
+    private IEnumerator RunPopInThenPause()
+    {
+        if (!hasRunPopIn)
+        {
+            animator.SetTrigger("PopInTrigger");
+            hasRunPopIn = true;
+            yield return new WaitForSeconds(0.8f);
+            gameIsPaused = true;
+        }
+        else
+        {
+            while (gameIsPaused)
+            {
+                yield return null; // Wacht totdat de game niet meer is gepauzeerd.
+            }
+        }
+
+        pause();
     }
 }
