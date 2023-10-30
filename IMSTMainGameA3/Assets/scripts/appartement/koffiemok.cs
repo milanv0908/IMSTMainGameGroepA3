@@ -18,7 +18,7 @@ public class koffiemok : MonoBehaviour
     public TextMeshProUGUI text;
     public bool telefoonfrank;
 
-    private bool hasBeenUsed = false;
+    public bool hasBeenUsed = false;
 
     private float activationDistance = 5.0f;
 

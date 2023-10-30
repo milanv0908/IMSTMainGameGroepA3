@@ -13,7 +13,7 @@ public class hoofddeur : MonoBehaviour
     private bool isCoroutineRunning = false;
     public TextMeshProUGUI text;
     // public speler player;
-    public spelertelefoon spelerbool;
+    public maskerscript spelerbool;
 
     void Start()
     {
@@ -25,7 +25,7 @@ public class hoofddeur : MonoBehaviour
 
     void Update()
     {
-        if (deurklink.isActivated == true && spelerbool.DeurOpen == false)
+        if (deurklink.isActivated == true && spelerbool.maskeraan == false)
         {
             if (!isCoroutineRunning) // Check if the coroutine is already running
             {
@@ -36,12 +36,12 @@ public class hoofddeur : MonoBehaviour
             }
         }
 
-        if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.DeurOpen == true)
+        if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.maskeraan == true)
         {
             StartCoroutine(isopen1());
         }
 
-        if (isopen == true && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.DeurOpen == true)
+        if (isopen == true && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.maskeraan == true)
         {
             StartCoroutine(isdicht());
         }

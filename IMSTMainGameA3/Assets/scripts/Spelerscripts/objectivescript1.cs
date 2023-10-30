@@ -42,7 +42,7 @@ public class objectivescript1 : MonoBehaviour
 
             if (spelerbool.DeurOpen == true && !textchanged3)
         {
-            text.text = "Leave the appartment and visit william";
+            text.text = "Objective: Find you're AirMask and leave your appartment";
             textchanged3 = true;
             audiosource.PlayOneShot(objectivegeluid);
         }
