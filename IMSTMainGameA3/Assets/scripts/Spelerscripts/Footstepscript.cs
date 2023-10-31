@@ -8,7 +8,7 @@ public class Footstepscript : MonoBehaviour
     public PlayerMove PlayerMove;
     private AudioSource audiosource;
     private float footstepTimer = 10; // You need to declare this variable.
-    private float timePerStep = 0.6f;
+    private float timePerStep = 4f;
 
     private enum TerrainTags
     {
