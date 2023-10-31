@@ -15,6 +15,8 @@ public class busstation : MonoBehaviour
     public Transform player; // Spelerreferentie
     private float activationDistance = 5.0f;
 
+    public bool playanimation;
+
     void Start() {
         image.enabled = false;
         audiosource = GetComponent<AudioSource>();
@@ -24,6 +26,8 @@ public void wachtenopdebus() {
     image.enabled = true;
     audiosource.PlayOneShot(busvertrek);
     StartCoroutine(frank());
+    playanimation = true;
+    
     
 }
 
