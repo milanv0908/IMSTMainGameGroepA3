@@ -32,24 +32,14 @@ private void Update()
         marker.image.rectTransform.anchoredPosition = GetPosOnCompass(marker);
     }
 
-    if (buss.playerd == true)
-    {
-        compassImage.enabled = false; // Disabling the RawImage component
-        if (iconPrefab.activeSelf)
-        {
-            iconPrefab.SetActive(false); // Disabling the entire iconPrefab GameObject
-            Debug.Log("iconPrefab is now set to inactive");
-        }
-    }
-    else
-    {
-        compassImage.enabled = true;
-        if (!iconPrefab.activeSelf)
-        {
-            iconPrefab.SetActive(true); // Enabling the entire iconPrefab GameObject
-            Debug.Log("iconPrefab is now set to active");
-        }
-    }
+    // if (buss.playerd == true)
+    // {
+    //     compassImage.enabled = false; // Disabling the RawImage component
+        
+    // } else {
+    //     compassImage.enabled = true;
+        
+    // }
 }
 
     public void AddQuestMarker(QuestMarker marker)
