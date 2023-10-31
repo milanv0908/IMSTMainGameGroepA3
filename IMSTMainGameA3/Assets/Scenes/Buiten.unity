@@ -20854,7 +20854,7 @@ MonoBehaviour:
   image: {fileID: 1587132907}
   busvertrek: {fileID: 0}
   busaankomst: {fileID: 0}
-  UIUpdate: {fileID: 1993426769}
+  UIUpdate: {fileID: 2078241196}
   player: {fileID: 837150565}
 --- !u!114 &1770779693
 MonoBehaviour:
@@ -23762,11 +23762,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 30.202}
---- !u!1 &1993426769 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6256426373270134827, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
-  m_PrefabInstance: {fileID: 714281745}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1993426770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
@@ -25103,6 +25098,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &2078241196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6868657989003568245, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+  m_PrefabInstance: {fileID: 714281745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2080596737
 PrefabInstance:
   m_ObjectHideFlags: 0
