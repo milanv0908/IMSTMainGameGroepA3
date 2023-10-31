@@ -419,6 +419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConversationManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: BackgroundImage
+      value: 
+      objectReference: {fileID: 21300000, guid: dcc8896153006e140b4ff048f4ba3080, type: 3}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8408,15 +8412,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":197,"yPos":408.2},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"yes,
-    sure i can make an exeption.","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":485,"yPos":406.2},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"okay,
-    but only this time you know this is not how it usually goes.","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":347,"yPos":-86.9999847},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello,
-    This is william speaking.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
-    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":347,"yPos":40.1999969},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-215,"yPos":517.2},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"yes,
+    sure i can make an exeption.","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":73,"yPos":515.2},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"okay,
+    but only this time you know this is not how it usually goes.","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":-65,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello,
+    This is william speaking. bismillah bismillah inshallah ik ben achmend rachid
+    de derde houdoe ouw dikke moeder ik kom ouw vanavond hard van achteren pakken
+    en strart de frituur alvast op dankuwel tot morgen joejoe","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
+    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-65,"yPos":149.199982},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
     William, Frank here. I know you dont usually do this, but would you be able to
-    meet me at my place for our session?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":348,"yPos":161.200012},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Uhm?
+    meet me at my place for our session?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":-64,"yPos":270.2},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Uhm?
     why? did something happen why you can''t come online today?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
-    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":350,"yPos":279.2},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":-62,"yPos":388.2},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"No
     time to explain can you please just come over here it will all be clear soon!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
