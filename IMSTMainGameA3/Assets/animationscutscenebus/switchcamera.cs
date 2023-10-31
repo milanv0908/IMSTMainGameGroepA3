@@ -6,9 +6,10 @@ public class switchcamera : MonoBehaviour
 {
 public GameObject Camera1;
 public GameObject Camera2;
-
-    public busstation bus;
+public busstation bus;
 public int Manager;
+
+    private bool changed = true;
 
 public void ManageCamera() {
     if(Manager == 0) {
@@ -21,9 +22,11 @@ public void ManageCamera() {
 }
 
 void Update() {
-        if (bus.playanimation)
+        if (bus.playanimation == true && changed== true)
         {
             GetComponent<Animator>().SetTrigger("change");
+            changed = false;
+
         }
 }
 

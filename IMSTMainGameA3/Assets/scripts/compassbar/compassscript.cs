@@ -14,21 +14,43 @@ public class compassscript : MonoBehaviour
 
     public QuestMarker Frank;
 
+    public bus buss;
+
     private void Start()
     {
         compassUnit = compassImage.rectTransform.rect.width / 360f;
         AddQuestMarker(Frank);
+        iconPrefab.SetActive(true);
     }
 
-    private void Update()
-    {
-        compassImage.uvRect = new Rect(player.localEulerAngles.y / 360f, 0f, 1f, 1f);
+private void Update()
+{
+    compassImage.uvRect = new Rect(player.localEulerAngles.y / 360f, 0f, 1f, 1f);
 
-        foreach (QuestMarker marker in questMarkers)
+    foreach (QuestMarker marker in questMarkers)
+    {
+        marker.image.rectTransform.anchoredPosition = GetPosOnCompass(marker);
+    }
+
+    if (buss.playerd == true)
+    {
+        compassImage.enabled = false; // Disabling the RawImage component
+        if (iconPrefab.activeSelf)
         {
-            marker.image.rectTransform.anchoredPosition = GetPosOnCompass(marker);
+            iconPrefab.SetActive(false); // Disabling the entire iconPrefab GameObject
+            Debug.Log("iconPrefab is now set to inactive");
         }
     }
+    else
+    {
+        compassImage.enabled = true;
+        if (!iconPrefab.activeSelf)
+        {
+            iconPrefab.SetActive(true); // Enabling the entire iconPrefab GameObject
+            Debug.Log("iconPrefab is now set to active");
+        }
+    }
+}
 
     public void AddQuestMarker(QuestMarker marker)
     {
@@ -47,6 +69,8 @@ public class compassscript : MonoBehaviour
 
         return new Vector2(compassUnit * angle, 0f);
     }
+
+ 
 }
 
 // using System.Collections;

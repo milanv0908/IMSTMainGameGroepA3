@@ -7630,7 +7630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c506fee53434911428fe6431fd216215, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e361a9d2af85e2544aa451e86306b820, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8108,6 +8108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heeftPlayer2Gekozen: 0
+  buss: {fileID: 0}
 --- !u!54 &1600109869
 Rigidbody:
   m_ObjectHideFlags: 0

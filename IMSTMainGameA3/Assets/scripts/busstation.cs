@@ -56,7 +56,7 @@ public void wachtenopdebus() {
 }
 
     IEnumerator frank() {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(10);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
 
