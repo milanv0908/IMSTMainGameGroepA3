@@ -3217,11 +3217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   koffie: {fileID: 397991798}
---- !u!1 &626970328 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6256426373270134827, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
-  m_PrefabInstance: {fileID: 642887185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &626970329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
@@ -6017,7 +6012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16544593ebd2a641b8ea08a643bcb9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIUpdate: {fileID: 626970328}
+  UIUpdate: {fileID: 1755414902}
   koffiemok: {fileID: 195856693}
   maskeraan: 0
   player: {fileID: 1600109875}
@@ -8881,6 +8876,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1755414902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6868657989003568245, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+  m_PrefabInstance: {fileID: 642887185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1786887881
 GameObject:
   m_ObjectHideFlags: 0
