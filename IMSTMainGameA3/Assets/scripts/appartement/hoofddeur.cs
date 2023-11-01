@@ -36,6 +36,7 @@ public class hoofddeur : MonoBehaviour
                 text.text = "You can't leave the apartment yet!";
                 Debug.Log("hoi");
                 StartCoroutine(tekst());
+                audiosource.PlayOneShot(deuropslot);
             }
         }
 
