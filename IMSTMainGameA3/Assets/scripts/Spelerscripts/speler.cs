@@ -1,28 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class speler : MonoBehaviour
 {
- public bool heeftPlayer2Gekozen;
+    public bool heeftPlayer2Gekozen;
+    public bus buss;
 
-   public bus buss;
+    private int currentSceneIndex; // Variabele om de huidige scène-index bij te houden
 
- void Start(){
-    heeftPlayer2Gekozen = false;
- }
+    void Start()
+    {
+        heeftPlayer2Gekozen = false;
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // Haal de huidige scène-index op
+    }
 
- void Update() {
-   if(buss.playerd == true) {
-      StartCoroutine(spelerverdwijn());
-   }
+    void Update()
+    {
+        // Controleer of we in "Scene 2" zijn voordat we de code uitvoeren
+        if (currentSceneIndex == 2 && buss.playerd == true)
+        {
+            StartCoroutine(spelerverdwijn());
+        }
+    }
 
-       IEnumerator spelerverdwijn() {
+    IEnumerator spelerverdwijn()
+    {
         yield return new WaitForSeconds(3);
         GetComponent<MeshRenderer>().enabled = false;
-      
-        
-
-}
- }
+    }
 }

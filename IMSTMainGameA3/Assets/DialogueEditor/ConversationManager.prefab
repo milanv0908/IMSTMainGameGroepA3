@@ -321,10 +321,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScrollText: 1
-  ScrollSpeed: 1
+  ScrollSpeed: 0.1
   BackgroundImage: {fileID: 21300000, guid: dcc8896153006e140b4ff048f4ba3080, type: 3}
   BackgroundImageSliced: 1
-  OptionImage: {fileID: 21300000, guid: bf566e80557acbc45b9a695fcaa25327, type: 3}
+  OptionImage: {fileID: 21300000, guid: 21591aecfcd18a44fbba37fe109f69a5, type: 3}
   OptionImageSliced: 1
   AllowMouseInteraction: 1
   DialoguePanel: {fileID: 3900108755395677323}
@@ -460,15 +460,15 @@ RectTransform:
   m_GameObject: {fileID: 3900108755107041016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7350852, y: 0.72601, z: 0.72601}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3900108755196472087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0013733, y: -26.538}
-  m_SizeDelta: {x: 620, y: 47.0906}
+  m_AnchoredPosition: {x: 18.2, y: -20.7}
+  m_SizeDelta: {x: 620.979, y: 63.7324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3900108755107041022
 CanvasRenderer:
