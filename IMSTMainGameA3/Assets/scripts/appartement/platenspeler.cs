@@ -11,6 +11,7 @@ public class platenspeler : MonoBehaviour
     public Transform player; // Spelerreferentie
 
     public GameObject muziekparticles;
+    public bool musicon = false;
 
     private bool isPlaying = false; // Flag to track if audio is already playing
 
@@ -29,6 +30,7 @@ public class platenspeler : MonoBehaviour
             audiosource.PlayOneShot(dikkebeat);
             isPlaying = true; // Set the flag to indicate audio is playing
             muziekparticles.SetActive(true);
+            musicon = true;
         }
     }
 
@@ -40,5 +42,27 @@ public class platenspeler : MonoBehaviour
             isPlaying = false;
             muziekparticles.SetActive(false);
         }
+
+                if (player != null)
+    {
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= activationDistance && musicon == false)
+        {
+            UIUpdate.SetActive(true);
+            GetComponent<BoxCollider>().enabled = true;
+        }
+        else
+        {
+            UIUpdate.SetActive(false);
+        }
+
+        // Bijwerk de rotatie van het UIUpdate-object om met de speler mee te draaien
+        UIUpdate.transform.rotation = Quaternion.Euler(-90, player.rotation.eulerAngles.y, 0);
+        //  UIUpdate.transform.rotation = Quaternion.Euler(270, player.rotation.eulerAngles.z, 0);
+        
+        // Reset de schaal naar positieve waarden
+        // UIUpdate.transform.localScale = new Vector3(1, 1, 1);
+    }
     }
 }
