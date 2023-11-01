@@ -1,0 +1,23 @@
+{
+  "prompt_text": "Wooden wall with some planks lined up in saturated brown color",
+  "patch": {
+    "ext": "png",
+    "dtype": "uint8",
+    "width": 512,
+    "height": 512,
+    "url": "https://static-dev.withpoly.com/v3-voronoi/textures/patches/32f36d81-0947-4a26-b344-64daf3ff4f98.png",
+    "patch_id": "3Lru2f5p7p"
+  },
+  "seamless_prompt_text": "Wooden wall with some planks lined up in saturated brown color",
+  "seamless_patch_scale": 0.8,
+  "upscale_prompt_text": "Wooden wall with some planks lined up in saturated brown color",
+  "upscale_resolution": 4096,
+  "is_seamless": true,
+  "pbr_mode": "matte",
+  "pbr_generate_color": true,
+  "pbr_generate_normal": true,
+  "pbr_generate_height": false,
+  "pbr_generate_ao": true,
+  "pbr_generate_roughness": true,
+  "pbr_generate_metallic": false
+}

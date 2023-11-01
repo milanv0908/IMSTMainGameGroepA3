@@ -14,6 +14,9 @@ public class hoofddeur : MonoBehaviour
     public TextMeshProUGUI text;
     // public speler player;
     public maskerscript spelerbool;
+    public AudioClip deuropen;
+    public AudioClip deurdicht;
+    public AudioClip deuropslot;
 
     void Start()
     {
@@ -63,6 +66,7 @@ public class hoofddeur : MonoBehaviour
         isopen = true;
         Debug.Log("open");
         isCoroutineRunning = false;
+        audiosource.PlayOneShot(deuropen);
     }
 
     IEnumerator isdicht()
@@ -73,6 +77,7 @@ public class hoofddeur : MonoBehaviour
         isopen = false;
         Debug.Log("Sluiten");
         isCoroutineRunning = false;
+        audiosource.PlayOneShot(deurdicht);
     }
 }
 

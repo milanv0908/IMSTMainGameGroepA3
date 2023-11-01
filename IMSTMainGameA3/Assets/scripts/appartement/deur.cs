@@ -11,6 +11,8 @@ public class deur : MonoBehaviour
     public deurklink deurklink;
     public bool isopen;
     private bool isCoroutineRunning = false;
+    public AudioClip deuropen;
+    public AudioClip deurdicht;
 
     void Start()
     {
@@ -40,6 +42,7 @@ public class deur : MonoBehaviour
         isopen = true;
         Debug.Log("open");
         isCoroutineRunning = false;
+        audiosource.PlayOneShot(deuropen);
     }
 
     IEnumerator isdicht()
@@ -50,5 +53,6 @@ public class deur : MonoBehaviour
         isopen = false;
         Debug.Log("Sluiten");
         isCoroutineRunning = false;
+        audiosource.PlayOneShot(deurdicht);
     }
 }

@@ -6,13 +6,16 @@ public class deurklink : MonoBehaviour
 {
     public GameObject UIUpdate; // Het gameobject met de Image-component
     Animator animator;
+    AudioSource audiosource;
     public bool isActivated;
     public Transform player; // Spelerreferentie
+
 
     private float activationDistance = 5.0f;
 
     void Start()
     {
+        audiosource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         isActivated = false;
         UIUpdate.SetActive(false);
@@ -47,6 +50,7 @@ public class deurklink : MonoBehaviour
         animator.SetTrigger("activate");
         isActivated = true;
         StartCoroutine(openDeur());
+        
     }
 
     IEnumerator openDeur()

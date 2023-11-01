@@ -9,6 +9,10 @@ public CursorState cursorState;
 public static bool gameIsPaused;
 public GameObject pauseMenuUI;
 
+void Start() {
+    resume();
+}
+
     void Update()
     {
        if(cursorState.cursorState == true) {
