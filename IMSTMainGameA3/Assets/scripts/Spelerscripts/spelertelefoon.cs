@@ -54,17 +54,11 @@ public class spelertelefoon : MonoBehaviour
                 }
             }
 
-            
-
                      if (ConversationManager.Instance != null)
          {
             if (ConversationManager.Instance.IsConversationActive)
             {
-                // Schakel het script uit wanneer de conversatie actief is
-                // scriptToDisable.enabled = false;
-                // Schakel de beweging van de speler uit
-                // playerMovement.enabled = false;
-
+   
                 Camerabob.enabled = false;
 
                 // Voer de rest van je dialooglogica uit
