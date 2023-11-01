@@ -9,6 +9,11 @@ public CursorState cursorState;
 public static bool gameIsPaused;
 public GameObject pauseMenuUI;
 
+ public Camerabob Camerabob;
+
+public PlayerMove playerMovement;
+
+ public speler player;
 void Start() {
     resume();
 }
@@ -38,14 +43,17 @@ void Start() {
 
     public void resume () {
 pauseMenuUI.SetActive(false);
-Time.timeScale = 1f;
 gameIsPaused = false;
+playerMovement.enabled = true;
+Camerabob.enabled = true;
 cursorState.cursorState = false;
     }
 
     void pause () {
 pauseMenuUI.SetActive(true);
-Time.timeScale = 0f;
+// Time.timeScale = 1f;
+playerMovement.enabled = false;
+Camerabob.enabled = false;
 gameIsPaused = true;
     }
 

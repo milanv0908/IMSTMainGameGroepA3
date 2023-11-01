@@ -18,6 +18,10 @@ public class looptutorial : MonoBehaviour
         Debug.Log("pause");
     }
 
+public void startCoroutineMenuShits(){
+    hasRunPopIn = false;
+    StartCoroutine(RunPopInThenPause());
+}
     void Update()
     {
         if (gameIsPaused == true && Input.GetKeyDown(KeyCode.E))
