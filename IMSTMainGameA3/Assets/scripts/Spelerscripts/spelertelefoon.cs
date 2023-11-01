@@ -35,7 +35,7 @@ public class spelertelefoon : MonoBehaviour
     {
         
         // Check if the "telefoonfrank" variable is true in the "koffie" object.
-        if (koffie.telefoonfrank == false && Input.GetKeyDown(KeyCode.F))
+        if (koffie.telefoonfrank == true && Input.GetKeyDown(KeyCode.F))
         {
             
             telefoon.enabled = false;
