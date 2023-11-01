@@ -9,6 +9,7 @@ public class maskerscript : MonoBehaviour
     public bool maskeraan = false;
     private float activationDistance = 5.0f;
     public Transform player; // Spelerreferentie
+    public bool pickedup;
 
     void Start() {
         GetComponent<BoxCollider>().enabled = false;
@@ -24,19 +25,20 @@ GetComponent<MeshRenderer>().enabled = false;
 }
 
 void Update() {
-    if (koffiemok.hasBeenUsed == true) {
-        GetComponent<BoxCollider>().enabled = true;
-        UIUpdate.SetActive(true);
+    // if (koffiemok.hasBeenUsed == true) {
+    //     GetComponent<BoxCollider>().enabled = true;
+    //     UIUpdate.SetActive(true);
 
-    }
+    // }
 
         if (player != null)
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= activationDistance)
+        if (distanceToPlayer <= activationDistance && koffiemok.hasBeenUsed == true && maskeraan == false)
         {
             UIUpdate.SetActive(true);
+            GetComponent<BoxCollider>().enabled = true;
         }
         else
         {
