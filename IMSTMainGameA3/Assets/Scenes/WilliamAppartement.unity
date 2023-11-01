@@ -2227,11 +2227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dikkebeat: {fileID: 8300000, guid: 0afed3797abad2e47a85b038b41574d1, type: 3}
-  UIUpdate: {fileID: 0}
-  player: {fileID: 0}
-  muziekparticles: {fileID: 1037602091}
   UIUpdate: {fileID: 536210896}
   player: {fileID: 1600109875}
+  muziekparticles: {fileID: 1037602091}
   musicon: 0
 --- !u!114 &424771973
 MonoBehaviour:
