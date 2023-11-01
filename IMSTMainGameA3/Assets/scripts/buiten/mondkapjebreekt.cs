@@ -15,9 +15,11 @@ public class mondkapjebreekt : MonoBehaviour
     }
 
     
-    void OnTriggerEnter()
+     public void OnTriggerEnter(Collider other)
     {
+     if (other.CompareTag("Player")){
         mondkap.enabled = false;
         geenmondkap.enabled = true;
+     }
     }
 }
