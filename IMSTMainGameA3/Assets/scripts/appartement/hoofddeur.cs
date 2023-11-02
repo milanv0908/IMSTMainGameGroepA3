@@ -14,6 +14,8 @@ public class hoofddeur : MonoBehaviour
     public TextMeshProUGUI text;
     // public speler player;
     public maskerscript spelerbool;
+
+    public gitaar gitaarbool;
     public AudioClip deuropen;
     public AudioClip deurdicht;
     public AudioClip deuropslot;
@@ -40,7 +42,7 @@ public class hoofddeur : MonoBehaviour
             }
         }
 
-        if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.maskeraan == true)
+        if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.maskeraan == true && gitaarbool.pickedupguitar == true)
         {
             StartCoroutine(isopen1());
         }
