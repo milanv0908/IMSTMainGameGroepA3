@@ -1346,7 +1346,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d25923384b6b0c14695801db0f262d9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1581430876}
   m_SourcePrefab: {fileID: 100100000, guid: d25923384b6b0c14695801db0f262d9a, type: 3}
 --- !u!1 &259508701
 GameObject:
@@ -8362,10 +8365,11 @@ GameObject:
   - component: {fileID: 1522744148}
   - component: {fileID: 1522744147}
   - component: {fileID: 1522744149}
-  - component: {fileID: 1522744153}
-  - component: {fileID: 1522744152}
   - component: {fileID: 1522744151}
   - component: {fileID: 1522744150}
+  - component: {fileID: 1522744153}
+  - component: {fileID: 1522744152}
+  - component: {fileID: 1522744154}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -8479,9 +8483,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
-  NodeID: 5
+  NodeID: 10
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
-  Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1522744153
 MonoBehaviour:
@@ -8498,9 +8502,28 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
-  NodeID: 4
+  NodeID: 8
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
-  Icon: {fileID: 21300000, guid: 36d9b7914c3ab62488c9671a6d8fd792, type: 3}
+  Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1522744154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522744146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 13
+  TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
+  Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1523622300 stripped
 Transform:
@@ -8897,6 +8920,82 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1581430872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d25923384b6b0c14695801db0f262d9a, type: 3}
+  m_PrefabInstance: {fileID: 257110382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1581430876
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581430872}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: d25923384b6b0c14695801db0f262d9a, type: 3}
+--- !u!1 &1582983771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582983773}
+  - component: {fileID: 1582983772}
+  m_Layer: 6
+  m_Name: Post
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1582983772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582983771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 1156662213e5a694f802ca087fe0455e, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1582983773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582983771}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 492.25195, y: 223.75586, z: 3.598435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1593263653
 GameObject:
   m_ObjectHideFlags: 0
@@ -9193,7 +9292,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.7, y: 1.62, z: 0}
-  m_LocalScale: {x: 1, y: 1.5395, z: 1}
+  m_LocalScale: {x: 0.90277, y: 1.3898144, z: 0.90277}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1664722226}
@@ -9328,17 +9427,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 8
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":127,"yPos":610.2},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"yes,
-    sure i can make an exeption.","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":415,"yPos":608.2},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"okay,
-    but only this time you know this is not how it usually goes.","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":277,"yPos":115},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello,
-    This is william speaking. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
-    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":277,"yPos":242.199982},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
-    William, Frank here. I know you dont usually do this, but would you be able to
-    meet me at my place for our session?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":363.2},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Uhm?
-    why? did something happen why you can''t come online today?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
-    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":280,"yPos":481.2},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-    time to explain can you please just come over here it will all be clear soon!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 14
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":140.200012,"yPos":-216.799927},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure!
+    i am free anyways!","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":428.2,"yPos":-218.799927},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Normally
+    no, but for this one time it is fine!","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":290.2,"yPos":-712},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello,
+    This is william speaking? ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
+    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":290.2,"yPos":-583.8},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    William, Frank here. I normally wouldn''t ask this, but some plans came up, could
+    you do my guitar lessong in 30 minutes instead of 2 hours?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":273.2,"yPos":-35.799942},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
+    you! see you in a bit!","parentUIDs":[6,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":277.2,"yPos":213.200073},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"*Phone
+    hangs up* ","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":277,"yPos":73.2},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"See
+    you soon!","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -9346,10 +9445,11 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 1522744147}
   - {fileID: 1522744149}
-  - {fileID: 1522744153}
-  - {fileID: 1522744152}
   - {fileID: 1522744151}
   - {fileID: 1522744150}
+  - {fileID: 1522744153}
+  - {fileID: 1522744152}
+  - {fileID: 1522744154}
   ContinueFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Event:
@@ -9512,6 +9612,8 @@ GameObject:
   - component: {fileID: 1664722230}
   - component: {fileID: 1664722228}
   - component: {fileID: 1664722227}
+  - component: {fileID: 1664722231}
+  - component: {fileID: 1664722232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9597,7 +9699,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -9623,6 +9725,84 @@ MonoBehaviour:
   Amount: 0.0186
   Frequency: 10
   Smooth: 24.9
+--- !u!114 &1664722231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664722225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1664722226}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
+--- !u!114 &1664722232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664722225}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c520d478f3d2445429bd7ac9c92b03a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postProcessLayer: {fileID: 1664722231}
+  lightMeter: 1
+  histogram: 0
+  waveform: 0
+  vectorscope: 0
+  debugOverlay: 0
 --- !u!1001 &1669710281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12763,6 +12943,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1582983773}
   - {fileID: 1852018879}
   - {fileID: 1683253210}
   - {fileID: 2051389918}
