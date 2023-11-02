@@ -13,7 +13,8 @@ public class Footstepscript : MonoBehaviour
     private enum TerrainTags
     {
 wood,
-stone
+stone,
+grass,
 
     }
 
