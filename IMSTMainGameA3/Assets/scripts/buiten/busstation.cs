@@ -24,7 +24,7 @@ public class busstation : MonoBehaviour
         UIUpdate.SetActive(false);
     }
 public void wachtenopdebus() {
-        if (mondmask.heeftmondmask = true){
+        if (mondmask.heeftmondmask == true){
             image.enabled = true;
             audiosource.PlayOneShot(busvertrek);
             StartCoroutine(frank());

@@ -18,6 +18,7 @@ public class mondmaskerdispenser : MonoBehaviour
     }
 
 public void mondmasker() {
+    
     mondmask.enabled = true;
     geenmondmask.enabled = false;
     heeftmondmask = true;
