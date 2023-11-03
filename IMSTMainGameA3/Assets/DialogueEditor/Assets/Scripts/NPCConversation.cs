@@ -31,6 +31,8 @@ namespace DialogueEditor
         public int Version { get { return saveVersion; } }
 
         // Serialized data
+        public AudioSource audioSource;
+
         [SerializeField] public int CurrentIDCounter = 1;
         [SerializeField] private string json;
         [SerializeField] private int saveVersion;
@@ -47,6 +49,10 @@ namespace DialogueEditor
         public List<EditableParameter> ParameterList; // Serialized into the json string
 
         
+void Start()
+{
+    audioSource = GetComponent<AudioSource>();
+}
 
 
         //--------------------------------------
@@ -561,5 +567,7 @@ namespace DialogueEditor
                 }
             }
         }
+
+
     }
 }

@@ -493,6 +493,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2041947037}
     m_Modifications:
+    - target: {fileID: 3900108755062758274, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Name
       value: ConversationManager
@@ -584,7 +588,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3900108754347413304, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1132454039}
   m_SourcePrefab: {fileID: 100100000, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
 --- !u!224 &116397211 stripped
 RectTransform:
@@ -6527,6 +6534,107 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 669504692}
   m_SourcePrefab: {fileID: 100100000, guid: a80d6b2f61e3021408402b0332f80fb1, type: 3}
+--- !u!1 &1132454035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3900108754347413304, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+  m_PrefabInstance: {fileID: 116397210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1132454039
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132454035}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1139216791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8573,7 +8681,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 65c846101681c7649abf67d0ec9860bc, type: 3}
 --- !u!4 &1522744148
 Transform:
   m_ObjectHideFlags: 0
@@ -8607,7 +8715,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 65c846101681c7649abf67d0ec9860bc, type: 3}
 --- !u!114 &1522744150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8664,7 +8772,7 @@ MonoBehaviour:
   NodeID: 10
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Icon: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 65c846101681c7649abf67d0ec9860bc, type: 3}
 --- !u!114 &1522744153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8683,7 +8791,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 65c846101681c7649abf67d0ec9860bc, type: 3}
 --- !u!114 &1522744154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8702,7 +8810,7 @@ MonoBehaviour:
   NodeID: 13
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 65c846101681c7649abf67d0ec9860bc, type: 3}
 --- !u!4 &1523622300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19f13a55a0c6a514e8ec2930721e8b17, type: 3}
@@ -9605,17 +9713,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 14
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":140.200012,"yPos":-216.799927},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure!
-    i am free anyways!","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":428.2,"yPos":-218.799927},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Normally
-    no, but for this one time it is fine!","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":290.2,"yPos":-712},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello,
+  audioSource: {fileID: 0}
+  CurrentIDCounter: 16
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":392.2,"yPos":9.200073},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure!
+    i am free anyways!","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":634.2,"yPos":7.20007324},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Normally
+    no, but for this one time it is fine!","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":513.2,"yPos":-354},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello,
     This is william speaking? ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William
-    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":290.2,"yPos":-583.8},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    (you)","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":513.2,"yPos":-225.8},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
     William, Frank here. I normally wouldn''t ask this, but some plans came up, could
-    you do my guitar lessong in 30 minutes instead of 2 hours?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":273.2,"yPos":-35.799942},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
-    you! see you in a bit!","parentUIDs":[6,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":277.2,"yPos":213.200073},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"*Phone
-    hangs up* ","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":277,"yPos":73.2},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"See
-    you soon!","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    you do my guitar lessong in 30 minutes instead of 2 hours?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":496.2,"yPos":322.200073},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
+    you! see you in a bit!","parentUIDs":[6,7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":500.2,"yPos":571.2001},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"*Phone
+    hangs up* ","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":500,"yPos":429.2},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"See
+    you soon!","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
