@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
-public class bankietest : MonoBehaviour
+public class dialoguesettings : MonoBehaviour
 {
 
      public Camerabob Camerabob; // Voeg een referentie naar het bewegingsscript van de speler toe.
