@@ -533,22 +533,49 @@ namespace DialogueEditor
             DoParamAction(speech);
 
             // Play the audio
-            if (speech.Audio != null)
-            {
-                AudioPlayer.clip = speech.Audio;
-                AudioPlayer.volume = speech.Volume;
-                AudioPlayer.Play();
-            }
+           if (speech.Audio != null)
+    {
+        AudioPlayer.clip = speech.Audio;
+        AudioPlayer.volume = speech.Volume;
+        AudioPlayer.Play();
+    }
 
-            if (ScrollText)
-            {
-                SetState(eState.ScrollingText);
-            }
-            else
-            {
-                SetState(eState.TransitioningOptionsOn);
-            }            
+    if (ScrollText)
+    {
+        SetState(eState.ScrollingText);
+        // Als audio wordt afgespeeld en tekst aan het scrollen is, roep een methode op om audio te stoppen wanneer de tekst volledig is gescrold
+        if (AudioPlayer.isPlaying)
+        {
+            // Bereken de tijd die nodig is om de tekst volledig te scrollen
+            float scrollDuration = CalculateScrollDuration(speech.Text);
+            // Roep de StopAudioAfterTextScrollDelayed-methode op met een vertraging gelijk aan de scrolltijd
+            Invoke("StopAudioAfterTextScrollDelayed", scrollDuration);
         }
+    }
+    else
+    {
+        SetState(eState.TransitioningOptionsOn);
+    }
+        }
+
+        private void StopAudioAfterTextScrollDelayed()
+{
+    // Stop de audioweergave
+    if (AudioPlayer.isPlaying)
+    {
+        AudioPlayer.Stop();
+    }
+}
+
+// Deze functie berekent de tijd die nodig is om de tekst volledig te scrollen
+private float CalculateScrollDuration(string text)
+{
+    // Implementeer je eigen logica om dit te berekenen op basis van de tekstlengte en de scrollsnelheid
+    // Voor demonstratiedoeleinden ga ik uit van een constante scrollsnelheid van 10 tekens per seconde.
+    float tekensPerSeconde = 25.0f;
+    float scrollDuur = text.Length / tekensPerSeconde;
+    return scrollDuur;
+}
 
 
 
