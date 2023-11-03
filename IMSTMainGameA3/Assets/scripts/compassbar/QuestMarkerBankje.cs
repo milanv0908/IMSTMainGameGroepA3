@@ -1,12 +1,12 @@
-// QuestMarker.cs
+// QuestMarkerBankje.cs
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestMarker : MonoBehaviour, IQuestMarker
+public class QuestMarkerBankje : MonoBehaviour, IQuestMarker
 {
     public Sprite icon;
     public Image image;
-    public mondmaskerdispenser praatpaal;
+    public busstation bank;
 
     public Sprite Icon { get { return icon; } }
     public Image Image { get { return image; } }
@@ -16,12 +16,18 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
         get { return new Vector2(transform.position.x, transform.position.z); }
     }
 
-    public void RemoveMarker()
-    {
+    void Start() {
         if (image != null)
         {
             image.enabled = false;
         }
+    }
+
+    public void RemoveMarker()
+    {
+      
+            image.enabled = true;
+        
     }
 
     public void SetImage(Image newImage)
@@ -31,7 +37,7 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
 
     void Update()
     {
-        if (praatpaal.hasinteracted == true)
+        if (bank.playanimation == true)
         {
             RemoveMarker();
         }

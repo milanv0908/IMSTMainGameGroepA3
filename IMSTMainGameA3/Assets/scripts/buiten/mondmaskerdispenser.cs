@@ -10,8 +10,11 @@ public class mondmaskerdispenser : MonoBehaviour
     public GameObject UIUpdate; // Het gameobject met de Image-component
     private float activationDistance = 5.0f;
     public Transform player; // Spelerreferentie
+    public bool hasinteracted = false;
 
     public bool heeftmondmask = false;
+
+    
 
     void Start() {
     UIUpdate.SetActive(false);
@@ -22,6 +25,7 @@ public void mondmasker() {
     mondmask.enabled = true;
     geenmondmask.enabled = false;
     heeftmondmask = true;
+        hasinteracted = true;
 
 
 }
@@ -31,7 +35,7 @@ void Update() {
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= activationDistance)
+        if (distanceToPlayer <= activationDistance && hasinteracted == false)
         {
             UIUpdate.SetActive(true);
             GetComponent<BoxCollider>().enabled = true;

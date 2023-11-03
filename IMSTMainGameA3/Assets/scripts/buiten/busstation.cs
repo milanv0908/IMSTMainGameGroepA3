@@ -29,6 +29,7 @@ public void wachtenopdebus() {
             audiosource.PlayOneShot(busvertrek);
             StartCoroutine(frank());
             playanimation = true;
+            Debug.Log("huts");
         }
     
     
@@ -59,7 +60,7 @@ public void wachtenopdebus() {
 }
 
     IEnumerator frank() {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(13f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
 

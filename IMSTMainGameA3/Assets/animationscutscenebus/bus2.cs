@@ -22,8 +22,8 @@ public class bus2 : MonoBehaviour
        if (playerbool.bus2 == true) {
        GetComponent<MeshRenderer>().enabled = true;
        GetComponent<BoxCollider>().enabled = true;
-       animator.SetTrigger("startanimatie");
-            Debug.Log("hoi");
+       animator.SetTrigger("start2");
+       Debug.Log("hoi");
        
 
        } 

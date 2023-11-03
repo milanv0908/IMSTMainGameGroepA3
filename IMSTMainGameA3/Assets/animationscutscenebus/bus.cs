@@ -24,6 +24,7 @@ public class bus : MonoBehaviour
        GetComponent<BoxCollider>().enabled = true;
        animator.SetTrigger("startanimatie");
        playerd = true;
+        Debug.Log("kok");
        
 
        } 
