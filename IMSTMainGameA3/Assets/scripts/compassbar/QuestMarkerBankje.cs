@@ -1,4 +1,6 @@
 // QuestMarkerBankje.cs
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,27 +8,37 @@ public class QuestMarkerBankje : MonoBehaviour, IQuestMarker
 {
     public Sprite icon;
     public Image image;
-    public busstation bank;
+    public mondmaskerdispenser mondmask;
 
     public Sprite Icon { get { return icon; } }
     public Image Image { get { return image; } }
+
+    
+    void Start() {
+
+            
+            Debug.Log("hoi");
+        StartCoroutine(uit());
+
+    }
+
+                  IEnumerator uit() {
+        yield return new WaitForSeconds(0.1f);
+        image.enabled = false;
+    
+
+}
 
     public Vector2 Position
     {
         get { return new Vector2(transform.position.x, transform.position.z); }
     }
 
-    void Start() {
-        if (image != null)
-        {
-            image.enabled = false;
-        }
-    }
-
     public void RemoveMarker()
     {
       
             image.enabled = true;
+            
         
     }
 
@@ -37,7 +49,7 @@ public class QuestMarkerBankje : MonoBehaviour, IQuestMarker
 
     void Update()
     {
-        if (bank.playanimation == true)
+        if (mondmask.hasinteracted == true)
         {
             RemoveMarker();
         }

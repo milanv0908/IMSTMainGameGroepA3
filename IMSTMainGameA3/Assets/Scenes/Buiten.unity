@@ -28582,7 +28582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 25f95eaf79d142948bbb4f352282bd23, type: 3}
   image: {fileID: 0}
-  bank: {fileID: 1770779692}
+  mondmask: {fileID: 97761037}
 --- !u!1001 &1773262015
 PrefabInstance:
   m_ObjectHideFlags: 0
