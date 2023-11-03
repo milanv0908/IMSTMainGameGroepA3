@@ -1,20 +1,10 @@
-// op het object voeg als component het NPCConversationscript
-//voeg dit script toe
-//sleep dit in je object interactionscript en kies als functie interactietest1
-//voeg de speler/camera etc. script toe om te disabelen in je inspector.
-//bij conversation voeg het object toe waarmee je wilt praten (deze is hetzelfde als waar dit script op zit)
-//ga naar windows dialogue editor en edit de dialoog. vergeet niet om de audio op 1 te zetten
-//wil je nieuwe dingen doe dat in je editor met rechterklik dan krijg je de opties
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
-public class dialoguesettings : MonoBehaviour
+public class DialogueSettingsOnTriggerEnter : MonoBehaviour
 {
-
      public Camerabob Camerabob; // Voeg een referentie naar het bewegingsscript van de speler toe.
     public NPCConversation Conversation;
     public speler player;
@@ -30,8 +20,8 @@ public class dialoguesettings : MonoBehaviour
                 // Schakel het script uit wanneer de conversatie actief is
                 scriptToDisable.enabled = false;
                 // Schakel de beweging van de speler uit
-                playerMovement.enabled = false;
-                Camerabob.enabled = false;
+                // playerMovement.enabled = false;
+                // Camerabob.enabled = false;
 
                 // Voer de rest van je dialooglogica uit
                 if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -49,19 +39,19 @@ public class dialoguesettings : MonoBehaviour
                 // Zorg ervoor dat het script weer wordt ingeschakeld wanneer de conversatie niet actief is
                 scriptToDisable.enabled = true;
                 // Schakel de beweging van de speler weer in
-                playerMovement.enabled = true;
-                Camerabob.enabled = true;
+                // playerMovement.enabled = true;
+                // Camerabob.enabled = true;
 
                 // Voer andere logica uit wanneer de conversatie niet actief is
             }
         }
     }
 
-    public void interactieTest1()
-    {
+public void OnTriggerEnter()
+{
         if (!ConversationManager.Instance.IsConversationActive)
         {
             ConversationManager.Instance.StartConversation(Conversation);
-        }
-    }
+           }
+}
 }
