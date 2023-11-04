@@ -6,6 +6,7 @@ using UnityEngine.UI;
 namespace DialogueEditor
 {
     public class ConversationManager : MonoBehaviour
+  
     {
         private enum eState
         {
