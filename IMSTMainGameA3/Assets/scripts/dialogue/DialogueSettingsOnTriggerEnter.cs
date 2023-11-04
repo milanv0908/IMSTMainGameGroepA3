@@ -5,11 +5,11 @@ using DialogueEditor;
 
 public class DialogueSettingsOnTriggerEnter : MonoBehaviour
 {
-     public Camerabob Camerabob; // Voeg een referentie naar het bewegingsscript van de speler toe.
+    //  public Camerabob Camerabob; // Voeg een referentie naar het bewegingsscript van de speler toe.
     public NPCConversation Conversation;
     public speler player;
-    public ObjectInteraction scriptToDisable; // Voeg een referentie naar het script dat je wilt uitschakelen toe.
-    public PlayerMove playerMovement; // Voeg een referentie naar het bewegingsscript van de speler toe.
+    // public ObjectInteraction scriptToDisable; // Voeg een referentie naar het script dat je wilt uitschakelen toe.
+    // public PlayerMove playerMovement; // Voeg een referentie naar het bewegingsscript van de speler toe.
 
     private void Update()
     {
@@ -18,7 +18,7 @@ public class DialogueSettingsOnTriggerEnter : MonoBehaviour
             if (ConversationManager.Instance.IsConversationActive)
             {
                 // Schakel het script uit wanneer de conversatie actief is
-                scriptToDisable.enabled = false;
+                // scriptToDisable.enabled = false;
                 // Schakel de beweging van de speler uit
                 // playerMovement.enabled = false;
                 // Camerabob.enabled = false;
@@ -37,7 +37,7 @@ public class DialogueSettingsOnTriggerEnter : MonoBehaviour
             else
             {
                 // Zorg ervoor dat het script weer wordt ingeschakeld wanneer de conversatie niet actief is
-                scriptToDisable.enabled = true;
+                // scriptToDisable.enabled = true;
                 // Schakel de beweging van de speler weer in
                 // playerMovement.enabled = true;
                 // Camerabob.enabled = true;

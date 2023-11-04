@@ -33,12 +33,12 @@ grass,
     {
         audiosource.Play();
         footstepTimer = 0;
-            Debug.Log("voetstappen");
+            // Debug.Log("voetstappen");
     }
     else if (!PlayerMove.isMoving)
     {
         audiosource.Stop(); // Stop the audio when the player is not moving.
-            Debug.Log("geen voetstappen");
+            // Debug.Log("geen voetstappen");
     }
 
     if (!PlayerMove.isGrounded())
