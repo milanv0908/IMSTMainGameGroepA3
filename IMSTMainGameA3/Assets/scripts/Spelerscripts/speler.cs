@@ -21,13 +21,8 @@ public class speler : MonoBehaviour
         // Controleer of we in "Scene 2" zijn voordat we de code uitvoeren
         if (currentSceneIndex == 2 && buss.playerd == true)
         {
-            StartCoroutine(spelerverdwijn());
+            GetComponent<MeshRenderer>().enabled = false;
         }
     }
 
-    IEnumerator spelerverdwijn()
-    {
-        yield return new WaitForSeconds(3);
-        GetComponent<MeshRenderer>().enabled = false;
-    }
 }

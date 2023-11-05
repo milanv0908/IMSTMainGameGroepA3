@@ -28,6 +28,7 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
     {
         if (image != null)
         {
+            jonas.jonasinteracted = false;
             image.enabled = true;
             Debug.Log("enable");
         }
