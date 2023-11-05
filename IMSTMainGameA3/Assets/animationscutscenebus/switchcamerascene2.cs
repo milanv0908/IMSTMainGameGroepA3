@@ -49,7 +49,7 @@ void Cam2() {
 }
 
                 IEnumerator nieuwescene() {
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(14);
         ManageCamera();
 
 }
