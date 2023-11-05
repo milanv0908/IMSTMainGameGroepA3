@@ -41,7 +41,7 @@ public void wachtenopdebus() {
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= activationDistance)
+        if (distanceToPlayer <= activationDistance && mondmask.hasinteracted == true)
         {
             UIUpdate.SetActive(true);
         }

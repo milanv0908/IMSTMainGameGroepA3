@@ -6,6 +6,7 @@ public class bus2 : MonoBehaviour
 {
     Animator animator;
     public switchcamera playerbool;
+    public bool william = false;
     
  
     void Start()
@@ -23,7 +24,8 @@ public class bus2 : MonoBehaviour
        GetComponent<MeshRenderer>().enabled = true;
        GetComponent<BoxCollider>().enabled = true;
        animator.SetTrigger("start2");
-       Debug.Log("hoi");
+            william = true;
+       
        
 
        } 
