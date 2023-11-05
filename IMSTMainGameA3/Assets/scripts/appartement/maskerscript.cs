@@ -21,6 +21,7 @@ public void Maskeroppakken() {
 GetComponent<MeshRenderer>().enabled = false;
     GetComponent<BoxCollider>().enabled = false;
         maskeraan = true;
+        Debug.Log("functiewerkt");
 
 }
 

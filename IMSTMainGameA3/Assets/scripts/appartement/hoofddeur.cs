@@ -42,9 +42,20 @@ public class hoofddeur : MonoBehaviour
             }
         }
 
+        if (spelerbool.maskeraan == true) {
+            Debug.Log("maskeraan");
+
+        }
+
+        if (gitaarbool.pickedupguitar == true) {
+            Debug.Log("sax");
+            
+        }
+
         if (isopen == false && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.maskeraan == true && gitaarbool.pickedupguitar == true)
         {
             StartCoroutine(isopen1());
+            Debug.Log("huts");
         }
 
         if (isopen == true && deurklink.isActivated == true && !isCoroutineRunning && spelerbool.maskeraan == true)

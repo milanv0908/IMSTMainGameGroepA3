@@ -13,6 +13,7 @@ public class mondmaskerdispenser : MonoBehaviour
     public bool hasinteracted = false;
 
     public bool heeftmondmask = false;
+    public bool objectivebus = false;
 
     
 
@@ -25,7 +26,9 @@ public void mondmasker() {
     mondmask.enabled = true;
     geenmondmask.enabled = false;
     heeftmondmask = true;
-        hasinteracted = true;
+    hasinteracted = true;
+    objectivebus = true;
+    StartCoroutine(bloep());
 
 
 }
@@ -52,5 +55,12 @@ void Update() {
         // Reset de schaal naar positieve waarden
         // UIUpdate.transform.localScale = new Vector3(1, 1, 1);
     }
+}
+
+IEnumerator bloep() {
+ yield return new WaitForSeconds(0.1f);
+objectivebus = false;
+    
+
 }
 }

@@ -8,6 +8,8 @@ public class objectives : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public streetevent streetevent;
+    public Jonas jonas;
+    public mondmaskerdispenser facemask;
     void Start()
     {
         text.enabled = true;
@@ -17,8 +19,16 @@ public class objectives : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (streetevent.hasinteracted = true) {
+       if (streetevent.hasinteracted == true) {
             text.text = "Objective: Maybe somebody in park can tell you where to find a facemask.";
-       } 
+       }
+
+       if (jonas.jonasinteract == true) {
+            text.text = "Objective: Go to the FaceMask dispenser."; 
+       }
+
+       if (facemask.objectivebus == true) {
+            text.text = "Objective: Go to the busstation and wait for youre ride";
+       }
     }
 }

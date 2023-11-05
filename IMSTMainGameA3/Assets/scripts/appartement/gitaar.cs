@@ -20,6 +20,7 @@ public void Gitaaropakken() {
 GetComponent<MeshRenderer>().enabled = false;
     GetComponent<BoxCollider>().enabled = false;
         pickedupguitar = true;
+        Debug.Log("hoi");
 
 }
     void Update()

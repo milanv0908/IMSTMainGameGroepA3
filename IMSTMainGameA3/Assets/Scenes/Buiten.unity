@@ -2988,6 +2988,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 93858061}
+        m_TargetAssemblyTypeName: Jonas, Assembly-CSharp
+        m_MethodName: jonas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &93858057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3003,7 +3015,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   CurrentIDCounter: 2
   json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":543,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry
-    to bother, but my mask just broke. Do you know where I can find new ones?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":542,"yPos":200.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+    to bother, but my mask just broke. Do you know where I can buy a new mask?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":542,"yPos":200.200012},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
     sure, The pharmacy is at the end of this road.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jonas","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -3070,6 +3082,19 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 25f95eaf79d142948bbb4f352282bd23, type: 3}
   image: {fileID: 0}
   jonasinteracted: 0
+--- !u!114 &93858061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93858054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3634fbff6247949a937ed2d58e1d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jonasinteract: 0
 --- !u!1001 &94952394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3171,6 +3196,7 @@ MonoBehaviour:
   player: {fileID: 837150565}
   hasinteracted: 0
   heeftmondmask: 0
+  objectivebus: 0
 --- !u!114 &97761038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12384,6 +12410,9 @@ PrefabInstance:
       addedObject: {fileID: 93858058}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8386b4fc615877f40a3852ec0334861a, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 93858061}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8386b4fc615877f40a3852ec0334861a, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 93858059}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8386b4fc615877f40a3852ec0334861a, type: 3}
       insertIndex: -1
@@ -14962,6 +14991,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 664222409}
   streetevent: {fileID: 1678525008}
+  jonas: {fileID: 93858061}
+  facemask: {fileID: 97761037}
 --- !u!1001 &423022801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24017,7 +24048,7 @@ MonoBehaviour:
   NodeID: 1
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!4 &735537138
 Transform:
   m_ObjectHideFlags: 0
@@ -24051,7 +24082,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!1001 &736453680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35815,7 +35846,7 @@ MonoBehaviour:
   NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!4 &991904591
 Transform:
   m_ObjectHideFlags: 0
@@ -35849,7 +35880,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &991904593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35868,7 +35899,7 @@ MonoBehaviour:
   NodeID: 5
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 76ca8a25408819d438e966ce5d1c0f67, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &991904594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35887,7 +35918,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &991904595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35906,7 +35937,7 @@ MonoBehaviour:
   NodeID: 3
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &991904596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35963,7 +35994,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!1001 &994748325
 PrefabInstance:
   m_ObjectHideFlags: 0
