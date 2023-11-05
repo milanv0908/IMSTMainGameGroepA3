@@ -7,8 +7,8 @@ public class Footstepscript : MonoBehaviour
 {
     public PlayerMove PlayerMove;
     private AudioSource audiosource;
-    private float footstepTimer = 10; // You need to declare this variable.
-    private float timePerStep = 4f;
+    private float footstepTimer = 0.0f; // You need to declare this variable.
+    private float timePerStep = 5.3f;
 
     private enum TerrainTags
     {
@@ -52,16 +52,23 @@ grass,
 }
 
 
-    private void OnCollisionEnter(Collision col)
+private void OnCollisionEnter(Collision col)
+{
+    string currentTag = col.gameObject.tag;
+
+    for (int index = 0; index < footstepaudio.Length; index++)
     {
-        int index = 0;
-        foreach (string tag in Enum.GetNames(typeof(TerrainTags)))
+        if (currentTag == Enum.GetNames(typeof(TerrainTags))[index])
         {
-            if (col.gameObject.tag == tag)
+            // Check if the current audio clip is different from the new one.
+            if (audiosource.clip != footstepaudio[index])
             {
                 audiosource.clip = footstepaudio[index];
+                audiosource.Play(); // Start playing the new audio clip.
             }
-            index++;
+            return; // Exit the loop since we found a matching tag.
         }
     }
+}
+
 }
