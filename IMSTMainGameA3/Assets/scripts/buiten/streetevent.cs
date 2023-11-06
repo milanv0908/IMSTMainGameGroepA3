@@ -10,6 +10,7 @@ public class streetevent : MonoBehaviour
     {
         hasinteracted = true;
         StartCoroutine(bloep());
+        
     }
 
                         IEnumerator bloep() {
