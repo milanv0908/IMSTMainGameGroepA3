@@ -13,7 +13,6 @@ public class objectivescript1 : MonoBehaviour
     public spelertelefoon spelerbool;
     private bool textchanged1 = false;
     private bool textchanged2 = false;
-
     private bool textchanged3 = false;
 
 
