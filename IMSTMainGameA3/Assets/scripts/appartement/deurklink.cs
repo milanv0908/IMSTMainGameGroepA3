@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class deurklink : MonoBehaviour
 {
+    private float activationDistance = 5.0f;
     public GameObject UIUpdate; // Het gameobject met de Image-component
+    public Transform player; // Spelerreferentie
     Animator animator;
     AudioSource audiosource;
     public bool isActivated;
-    public Transform player; // Spelerreferentie
 
 
-    private float activationDistance = 5.0f;
 
     void Start()
     {
