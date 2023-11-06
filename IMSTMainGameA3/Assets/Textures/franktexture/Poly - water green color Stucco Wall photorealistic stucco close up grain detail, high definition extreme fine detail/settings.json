@@ -1,0 +1,23 @@
+{
+  "prompt_text": "water green color Stucco Wall photorealistic stucco close up grain detail, high definition extreme fine detail",
+  "prompt_image": {
+    "ext": "png",
+    "dtype": "uint8",
+    "width": 512,
+    "height": 512,
+    "url": "https://static-dev.withpoly.com/v3/textures/patches/ec698ced-8a9e-4568-ac3b-097bb241a5ef.png",
+    "patch_id": "3ncoro4uVS"
+  },
+  "seamless_prompt_text": "",
+  "seamless_patch_scale": 1.02,
+  "upscale_prompt_text": "",
+  "upscale_resolution": 4096,
+  "is_seamless": true,
+  "pbr_mode": "diverse",
+  "pbr_use_render_as_color": true,
+  "pbr_generate_normal": true,
+  "pbr_generate_height": true,
+  "pbr_generate_ao": true,
+  "pbr_generate_roughness": true,
+  "pbr_generate_metallic": false
+}
