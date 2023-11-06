@@ -6,12 +6,12 @@ public class switchcamerascene2 : MonoBehaviour
 {
 public GameObject Camera1;
 public GameObject Camera2;
+public bool eind = false;
 public int Manager;
 
-        public bool bus2;
 
         void Start(){
-                bus2 = false;
+
                 StartCoroutine(nieuwescene());
         }
 
@@ -48,10 +48,10 @@ void Cam2() {
         Camera2.SetActive(true);
 }
 
-                IEnumerator nieuwescene() {
-        yield return new WaitForSeconds(14);
-        ManageCamera();
-
+IEnumerator nieuwescene() {
+    yield return new WaitForSeconds(14);
+    eind = true; // Set the existing variable to true
+    ManageCamera();
 }
 
 }

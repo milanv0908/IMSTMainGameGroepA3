@@ -20,7 +20,7 @@ public class koffiezetapparaat : MonoBehaviour
     {
     animator = GetComponent<Animator>();
     audiosource = GetComponent<AudioSource>();
-     UIUpdate.SetActive(false);
+    UIUpdate.SetActive(false);
     }
 
        void Update()

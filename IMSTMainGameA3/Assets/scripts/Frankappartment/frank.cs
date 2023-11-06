@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class frank : MonoBehaviour
 {
-    public bool hasinteracted = false;
+public bool hasinteracted = false;
+public bool newobjective = false;
 
 public void interacting() {
         hasinteracted = true;
+        newobjective = true;
+        
 }
 }
