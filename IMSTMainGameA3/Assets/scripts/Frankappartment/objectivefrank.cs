@@ -18,6 +18,7 @@ public class objectivefrank : MonoBehaviour
     {
         if (Frank.newobjective = true) {
             text.text = "Objective: Set a cup of Coffee.";
+            Debug.Log("newobjective");
         }
     }
 }
