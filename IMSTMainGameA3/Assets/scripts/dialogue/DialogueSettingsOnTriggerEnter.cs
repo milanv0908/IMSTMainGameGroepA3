@@ -5,53 +5,31 @@ using DialogueEditor;
 
 public class DialogueSettingsOnTriggerEnter : MonoBehaviour
 {
-    //  public Camerabob Camerabob; // Voeg een referentie naar het bewegingsscript van de speler toe.
     public NPCConversation Conversation;
     public speler player;
-    // public ObjectInteraction scriptToDisable; // Voeg een referentie naar het script dat je wilt uitschakelen toe.
-    // public PlayerMove playerMovement; // Voeg een referentie naar het bewegingsscript van de speler toe.
+
+    public Rigidbody playerRigidbody; // Voeg een verwijzing naar de Rigidbody van de speler toe.
+
+    private void Start()
+    {
+        // Haal een verwijzing naar de Rigidbody van de speler op
+        playerRigidbody = player.GetComponent<Rigidbody>();
+
+        // Pas de lineaire en angulaire demping van de Rigidbody aan
+        playerRigidbody.drag = 5.0f; // Lineaire demping
+        playerRigidbody.angularDrag = 5.0f; // Angulaire demping
+    }
 
     private void Update()
     {
-        if (ConversationManager.Instance != null)
-        {
-            if (ConversationManager.Instance.IsConversationActive)
-            {
-                // Schakel het script uit wanneer de conversatie actief is
-                // scriptToDisable.enabled = false;
-                // Schakel de beweging van de speler uit
-                // playerMovement.enabled = false;
-                // Camerabob.enabled = false;
-
-                // Voer de rest van je dialooglogica uit
-                if (Input.GetKeyDown(KeyCode.UpArrow))
-                    ConversationManager.Instance.SelectPreviousOption();
-                else if (Input.GetKeyDown(KeyCode.DownArrow))
-                    ConversationManager.Instance.SelectNextOption();
-                else if (Input.GetKeyDown(KeyCode.E))
-                    ConversationManager.Instance.PressSelectedOption();
-
-                // Controleer of de bool "kies2" true is
-        
-            }
-            else
-            {
-                // Zorg ervoor dat het script weer wordt ingeschakeld wanneer de conversatie niet actief is
-                // scriptToDisable.enabled = true;
-                // Schakel de beweging van de speler weer in
-                // playerMovement.enabled = true;
-                // Camerabob.enabled = true;
-
-                // Voer andere logica uit wanneer de conversatie niet actief is
-            }
-        }
+        // De rest van je Update-logica hier...
     }
 
-public void OnTriggerEnter()
-{
+    public void OnTriggerEnter(Collider other)
+    {
         if (!ConversationManager.Instance.IsConversationActive)
         {
             ConversationManager.Instance.StartConversation(Conversation);
-           }
-}
+        }
+    }
 }
