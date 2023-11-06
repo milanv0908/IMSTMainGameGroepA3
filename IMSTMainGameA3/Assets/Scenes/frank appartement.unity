@@ -4068,6 +4068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa4c9d7bb55ead49a0be3cf5023ae34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Frank: {fileID: 2139047513}
+  text: {fileID: 1944520791}
 --- !u!4 &1328369764
 Transform:
   m_ObjectHideFlags: 0
@@ -6322,6 +6324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasinteracted: 0
+  newobjective: 0
+  isused: 0
 --- !u!95 &2139047514
 Animator:
   serializedVersion: 5
