@@ -19,20 +19,23 @@ public class coffeemachine : MonoBehaviour
     }
 
     public void interact() {
-        lekkerkoffie = false;
+        lekkerkoffie = true;
     }
 
     void Update() {
         if (frank.hasinteracted1 == true) {
 GetComponent<BoxCollider>().enabled = true;
-            lekkerkoffie = true;
+        }
+        if(lekkerkoffie == true) {
+            GetComponent<BoxCollider>().enabled = false;
+
         }
 
     if (player != null)
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= activationDistance && lekkerkoffie == true)
+        if (distanceToPlayer <= activationDistance && frank.hasinteracted1 == true && lekkerkoffie == false)
         {
             UIUpdate.SetActive(true);
         }

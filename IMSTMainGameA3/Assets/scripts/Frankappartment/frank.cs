@@ -9,7 +9,7 @@ public bool newobjective = false;
 public bool isused = false;
 
 public void interacting() {
-        if (isused = false)
+        if (isused == false)
         hasinteracted1 = true;
         newobjective = true;
         isused = true;
