@@ -322,9 +322,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScrollText: 1
   ScrollSpeed: 1
-  BackgroundImage: {fileID: 21300000, guid: dcc8896153006e140b4ff048f4ba3080, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 96dbbed08b8d03748b2e135d88ac9cef, type: 3}
   BackgroundImageSliced: 1
-  OptionImage: {fileID: 21300000, guid: 21591aecfcd18a44fbba37fe109f69a5, type: 3}
+  OptionImage: {fileID: 21300000, guid: 8205d9825d3a4914393f770e3b4ae278, type: 3}
   OptionImageSliced: 1
   AllowMouseInteraction: 1
   DialoguePanel: {fileID: 3900108755395677323}
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dcc8896153006e140b4ff048f4ba3080, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96dbbed08b8d03748b2e135d88ac9cef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
