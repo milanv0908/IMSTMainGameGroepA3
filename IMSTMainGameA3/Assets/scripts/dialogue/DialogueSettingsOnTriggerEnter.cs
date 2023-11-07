@@ -27,9 +27,15 @@ public class DialogueSettingsOnTriggerEnter : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        
+         StartCoroutine(waitForTutorial());
         if (!ConversationManager.Instance.IsConversationActive)
         {
             ConversationManager.Instance.StartConversation(Conversation);
         }
+    }
+
+    IEnumerator waitForTutorial(){
+        yield return new WaitForSeconds(3);
     }
 }

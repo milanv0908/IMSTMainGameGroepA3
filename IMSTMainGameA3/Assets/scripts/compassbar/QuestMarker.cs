@@ -46,6 +46,7 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
     {
         if (activate.Suzanne == true)
         {
+            
             AddMarker();
         }
     }
@@ -53,6 +54,7 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
                       IEnumerator uit() {
         yield return new WaitForSeconds(0.1f);
         image.enabled = false;
+        
     
 
 }

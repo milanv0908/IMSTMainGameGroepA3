@@ -6,7 +6,9 @@ public class gert : MonoBehaviour
 {
     public bool gertI = false;
 
-    private float activationDistance = 5.0f;
+    private float activationDistance = 9.0f;
+
+    bool hasBeenUsed = false;
     public GameObject UIUpdate; // Het gameobject met de Image-component
     public Transform player; // Spelerreferentie
 
@@ -15,7 +17,7 @@ public class gert : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= activationDistance)
+        if (distanceToPlayer <= activationDistance && hasBeenUsed == false)
         {
             UIUpdate.SetActive(true);
         }
@@ -26,22 +28,22 @@ public class gert : MonoBehaviour
 
         // Bijwerk de rotatie van het UIUpdate-object om met de speler mee te draaien
         UIUpdate.transform.rotation = Quaternion.Euler(-90, player.rotation.eulerAngles.y, 0);
+
         //  UIUpdate.transform.rotation = Quaternion.Euler(270, player.rotation.eulerAngles.z, 0);
         
         // Reset de schaal naar positieve waarden
         // UIUpdate.transform.localScale = new Vector3(1, 1, 1);
     }
     }
-    void interact()
+    public void interact()
     {
         gertI = true;
+        hasBeenUsed = true;
         StartCoroutine(uit());
     }
 
                           IEnumerator uit() {
         yield return new WaitForSeconds(0.1f);
         gertI = false;
-    
-
 }
 }

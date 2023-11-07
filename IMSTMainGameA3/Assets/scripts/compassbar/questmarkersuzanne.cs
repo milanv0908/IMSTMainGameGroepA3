@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class questmarkersuzanne : MonoBehaviour, IQuestMarker
 {
 
+    
+
     public Sprite icon;
     public Image image;
     public streetevent Streetevent;
