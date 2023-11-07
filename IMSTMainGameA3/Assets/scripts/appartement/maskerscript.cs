@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class maskerscript : MonoBehaviour
 {
@@ -11,10 +12,15 @@ public class maskerscript : MonoBehaviour
     public Transform player; // Spelerreferentie
     public bool pickedup;
 
+    public Image profielfotoMondmasker;
+
+    public GameObject MondkapjePicca;
+
     void Start() {
         GetComponent<BoxCollider>().enabled = false;
         UIUpdate.SetActive(false);
-
+        MondkapjePicca.SetActive(true);
+    profielfotoMondmasker.enabled = true;
     }
 public void Maskeroppakken() {
         
@@ -22,7 +28,7 @@ GetComponent<MeshRenderer>().enabled = false;
     GetComponent<BoxCollider>().enabled = false;
         maskeraan = true;
         Debug.Log("functiewerkt");
-
+    MondkapjePicca.SetActive(false);
 }
 
 void Update() {

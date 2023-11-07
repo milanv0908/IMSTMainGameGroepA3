@@ -8470,6 +8470,8 @@ MonoBehaviour:
   maskeraan: 0
   player: {fileID: 1600109875}
   pickedup: 0
+  profielfotoMondmasker: {fileID: 959655275}
+  MondkapjePicca: {fileID: 1293584172}
 --- !u!1001 &942567212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10186,6 +10188,8 @@ MonoBehaviour:
   maskeraan: 0
   player: {fileID: 1600109875}
   pickedup: 0
+  profielfotoMondmasker: {fileID: 0}
+  MondkapjePicca: {fileID: 0}
 --- !u!65 &1266735100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17327,7 +17331,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041947033}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86b639fc9610c29438e507c5a3f02469, type: 3}
   m_Name: 
