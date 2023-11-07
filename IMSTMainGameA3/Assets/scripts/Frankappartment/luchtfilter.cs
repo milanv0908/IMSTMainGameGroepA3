@@ -16,6 +16,7 @@ public class luchtfilter : MonoBehaviour
     }
 
     public void Interact() {
+        
         ending = true;
     }
 
