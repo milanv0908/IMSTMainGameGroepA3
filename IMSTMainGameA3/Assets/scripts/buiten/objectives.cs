@@ -8,8 +8,8 @@ public class objectives : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public streetevent streetevent;
-    public Jonas jonas;
     public mondmaskerdispenser facemask;
+     public suzanne activate;
     void Start()
     {
         text.enabled = true;
@@ -23,8 +23,8 @@ public class objectives : MonoBehaviour
             text.text = "Objective: Maybe somebody in park can tell you where to find a facemask.";
        }
 
-       if (jonas.jonasinteract == true) {
-            text.text = "Objective: Go to the FaceMask dispenser."; 
+       if (activate.Suzanne == true) {
+               text.text = "Objective: Buy a facemask at the dispenser.";
        }
 
        if (facemask.objectivebus == true) {

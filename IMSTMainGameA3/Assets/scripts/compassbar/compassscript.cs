@@ -15,8 +15,12 @@ public class compassscript : MonoBehaviour
 
     public QuestMarker Frank;
     public QuestMarkerBankje bankje;
-    public QuestMarkerNPC Jonas;
+    // public QuestMarkerNPC Jonas;
     public QuestmarkerGert Gert;
+
+    public QuestMarkerTate Tate;
+    public questmarkerpeter Peter;
+    public questmarkersuzanne suzanne;
 
     public bus buss;
 
@@ -25,8 +29,11 @@ public class compassscript : MonoBehaviour
         compassUnit = compassImage.rectTransform.rect.width / 360f;
         AddQuestMarker(Frank);
         AddQuestMarker(bankje);
-        AddQuestMarker(Jonas);
+        // AddQuestMarker(Jonas);
         AddQuestMarker(Gert);
+        AddQuestMarker(Tate);
+        AddQuestMarker(Peter);
+        AddQuestMarker(suzanne);
         iconPrefab.SetActive(true);
     }
 

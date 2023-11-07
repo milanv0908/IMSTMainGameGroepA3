@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class QuestmarkerGert : MonoBehaviour, IQuestMarker
 {
-
+    public suzanne uitt;
     public Sprite icon;
     public Image image;
     public streetevent Streetevent;
@@ -49,6 +49,10 @@ public class QuestmarkerGert : MonoBehaviour, IQuestMarker
         {
             AddMarker();
             Debug.Log("huts");
+        }
+
+        if (uitt.Suzanne == true) {
+            RemoveMarker();
         }
     }
 

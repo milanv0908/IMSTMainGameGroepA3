@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class QuestMarker : MonoBehaviour, IQuestMarker
 {
+    public suzanne activate;
     public Sprite icon;
     public Image image;
-    public QuestMarkerNPC jonas;
 
     public Sprite Icon { get { return icon; } }
     public Image Image { get { return image; } }
@@ -28,7 +28,6 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
     {
         if (image != null)
         {
-            jonas.jonasinteracted = false;
             image.enabled = true;
             Debug.Log("enable");
         }
@@ -45,10 +44,9 @@ public class QuestMarker : MonoBehaviour, IQuestMarker
 
     void Update()
     {
-        if (jonas.jonasinteracted == true)
+        if (activate.Suzanne == true)
         {
             AddMarker();
-            Debug.Log("jonasinteracted");
         }
     }
 
