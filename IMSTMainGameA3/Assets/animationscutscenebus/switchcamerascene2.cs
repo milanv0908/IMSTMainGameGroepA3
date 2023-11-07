@@ -15,6 +15,7 @@ public int Manager;
         void Start(){
 
                 StartCoroutine(nieuwescene());
+                // Cam1();
         }
 
 
@@ -44,23 +45,25 @@ void Cam1() {
         Camera1.SetActive(true);
         Camera2.SetActive(false);
         Camera3.SetActive(false);
+                Debug.Log("Hoi");
 }
 
 void Cam2() {
         Camera1.SetActive(false);
         Camera2.SetActive(true);
-                Camera3.SetActive(false);
+        Camera3.SetActive(false);
+        Debug.Log("Hoi2");
 }
 
 IEnumerator nieuwescene() {
     yield return new WaitForSeconds(14);
     eind = true; // Set the existing variable to true
-    ManageCamera();
+    Cam2();
 }
 
 void Update() {
                 if (Frank.beginend == true)
-                        Camera1.SetActive(false);
+                Camera1.SetActive(false);
                 Camera2.SetActive(false);
                 Camera3.SetActive(true);
 
