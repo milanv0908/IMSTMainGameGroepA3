@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class switchcamerascene2 : MonoBehaviour
 {
+        public frank Frank;
 public GameObject Camera1;
 public GameObject Camera2;
+        public GameObject Camera3;
 public bool eind = false;
 public int Manager;
 
@@ -41,17 +43,27 @@ public void ManageCamera() {
 void Cam1() {
         Camera1.SetActive(true);
         Camera2.SetActive(false);
+        Camera3.SetActive(false);
 }
 
 void Cam2() {
         Camera1.SetActive(false);
         Camera2.SetActive(true);
+                Camera3.SetActive(false);
 }
 
 IEnumerator nieuwescene() {
     yield return new WaitForSeconds(14);
     eind = true; // Set the existing variable to true
     ManageCamera();
+}
+
+void Update() {
+                if (Frank.beginend == true)
+                        Camera1.SetActive(false);
+                Camera2.SetActive(false);
+                Camera3.SetActive(true);
+
 }
 
 }
