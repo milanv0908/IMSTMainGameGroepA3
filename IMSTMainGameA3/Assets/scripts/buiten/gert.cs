@@ -6,7 +6,7 @@ public class gert : MonoBehaviour
 {
     public bool gertI = false;
 
-    private float activationDistance = 9.0f;
+    private float activationDistance = 10.0f;
 
     bool hasBeenUsed = false;
     public GameObject UIUpdate; // Het gameobject met de Image-component

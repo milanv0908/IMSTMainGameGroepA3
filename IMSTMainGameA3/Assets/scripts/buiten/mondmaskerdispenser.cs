@@ -9,7 +9,7 @@ public class mondmaskerdispenser : MonoBehaviour
     public Image mondmask;
     public Image geenmondmask;
     public GameObject UIUpdate;
-    private float activationDistance = 5.0f;
+    private float activationDistance = 10.0f;
     public Transform player;
     public bool hasinteracted = false;
 

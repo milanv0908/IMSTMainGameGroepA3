@@ -13,7 +13,7 @@ public class busstation : MonoBehaviour
     public AudioClip busaankomst;
     public GameObject UIUpdate; // Het gameobject met de Image-component
     public Transform player; // Spelerreferentie
-    private float activationDistance = 5.0f;
+    private float activationDistance = 10.0f;
 
     public bool playanimation;
     public mondmaskerdispenser mondmask;
