@@ -23,10 +23,9 @@ public class coffeemachine : MonoBehaviour
     }
 
     void Update() {
-        if (frank.hasinteracted == true) {
+        if (frank.hasinteracted1 == true) {
 GetComponent<BoxCollider>().enabled = true;
             lekkerkoffie = true;
-            frank.hasinteracted = false;
         }
 
     if (player != null)
