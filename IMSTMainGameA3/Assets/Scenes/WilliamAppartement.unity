@@ -3185,7 +3185,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6854,8 +6854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIUpdate: {fileID: 797961274}
-  isActivated: 0
   player: {fileID: 1600109875}
+  isActivated: 0
 --- !u!65 &813583040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7262,8 +7262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIUpdate: {fileID: 1231453111}
-  isActivated: 0
   player: {fileID: 1600109875}
+  isActivated: 0
 --- !u!65 &869476521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15097,8 +15097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIUpdate: {fileID: 0}
-  isActivated: 0
   player: {fileID: 0}
+  isActivated: 0
 --- !u!65 &1902985193
 BoxCollider:
   m_ObjectHideFlags: 0
