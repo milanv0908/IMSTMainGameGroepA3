@@ -28,7 +28,7 @@ public class objectives : MonoBehaviour
        }
 
        if (facemask.objectivebus == true) {
-            text.text = "Objective: Go to the busstation and wait for youre ride";
+            text.text = "Objective: Go to the busstation and wait for your ride";
        }
     }
 }
