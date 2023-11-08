@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class questmarkersuzanne : MonoBehaviour, IQuestMarker
 {
 
-    
+     public PeterInteract peterInteractScript;
+     public TateInteract tateInteractScript;
+     public GertInteract gertInteractScript;
+
+     public bool heeftshits = false;
+
 
     public Sprite icon;
     public Image image;
@@ -28,12 +33,16 @@ public class questmarkersuzanne : MonoBehaviour, IQuestMarker
 
     public void AddMarker()
     {
-        if (image != null)
+        if (image != null )
         {
             
             image.enabled = true;
             Debug.Log("enable");
         }
+    }
+
+    public void hasinteracted(){
+        RemoveMarker();
     }
 
     public void RemoveMarker() {
@@ -47,10 +56,11 @@ public class questmarkersuzanne : MonoBehaviour, IQuestMarker
 
     void Update()
     {
-        if (Streetevent.hasinteracted == true)
+        if (peterInteractScript.PeterTalked == true && tateInteractScript.TateTalked == true && gertInteractScript.GertTalked == true && heeftshits == false)
         {
             AddMarker();
             Debug.Log("huts");
+            heeftshits = true;
         }
 
     }
