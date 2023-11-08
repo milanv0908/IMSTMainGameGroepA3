@@ -771,7 +771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 98.1}
+  m_AnchoredPosition: {x: 0, y: 219}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258314302
@@ -1342,6 +1342,213 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &860788557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 860788558}
+  - component: {fileID: 860788560}
+  - component: {fileID: 860788559}
+  m_Layer: 5
+  m_Name: Credits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &860788558
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860788557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3624, y: 1.3624, z: 1.3624}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944008857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -154}
+  m_SizeDelta: {x: 100, y: 424}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &860788559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860788557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Animations by mixamohttps://www.mixamo.com/#/Buildings by buildifypluginhttps://paveloliva.gumroad.com/l/buildifyBuildings
+    by buildingtools pluginhttps://blender-addons.org/building-tools-addon/Rooftexture
+    by Tobal on sketchfabhttps://skfb.ly/69WJ6House plants by Yana Melnyk on sketchfabhttps://skfb.ly/o7r98Cups
+    by BlueCrystal500 on sketchfabhttp://creativecommons.org/licenses/by/4.0/Coffeemachine
+    by alandell on turbosquidhttps://www.turbosquid.com/3d-models/espresso-machine-3d-model-1408871Water
+    tap by abdulsattar on sketchfabhttp://creativecommons.org/licenses/by/4.0/Kitchen
+    texture by Plateresca on Istockhttps://www.istockphoto.com/nl/search/2/image?phrase=dark+kitchen+counterKitchen
+    texture2 by Zalerno on BDWhttps://buildersdiscountwarehouse.com.au/product/dove-grey-kitchen-stone/Fridge 
+    by NotToGoodStudio on sketchfabhttp://creativecommons.org/licenses/by/4.0/Kitchen
+    center island by rockefinger on sketchfabhttp://creativecommons.org/licenses/by-nc/4.0/Kitchen
+    lights by Chamee91 on sketchfab http://creativecommons.org/licenses/by/4.0/electric
+    stove by lutz_westerfeld on sketchfabhttp://creativecommons.org/licenses/by/4.0/switches
+    by denniswoo1993 on sketchfabhttps://skfb.ly/6VMOVChair by Noa Seller on sketchfabhttp://creativecommons.org/licenses/by/4.0/Ceiling
+    Lamps  by ElOsitoAzul on sketchfab https://skfb.ly/oJzNyminimalist shelves furniture
+    by ElOsitoAzul on sketchfab https://skfb.ly/oIoyBFace Mask by GabSith on sketchfabhttp://creativecommons.org/licenses/by/4.0/\"Desk
+    Chair\" by KaitlinKelly on sketchfabhttps://skfb.ly/6WYRoCouch  by Jeremy E.
+    Grayson on sketchfabhttp://creativecommons.org/licenses/by/4.0/Painting by BaptisteBerard
+    on sketchfabhttp://creativecommons.org/licenses/by/4.0/Street Light  by Algirdas
+    Lalys on sketchfabhttp://creativecommons.org/licenses/by/4.0/Bus image on esv
+    shophttps://esvshop.nl/veiligheidsborden/verkeersborden/informatie-verkeersborden/bushalte-bord-kunststof-l3b-117256Sunglasses 
+    by Elvair Lima on sketchfabhttp://creativecommons.org/licenses/by/4.0/Tissue
+    Box by zhixson on sketchfabhttp://creativecommons.org/licenses/by/4.0/Super Low
+    Poly Dumpster designed By Jonathan on sketchfabhttp://creativecommons.org/licenses/by/4.0/Trashcan
+    by MamickaBeeGames on sketchfabhttp://creativecommons.org/licenses/by/4.0/Fruit
+    Bowl by Pixel-bit on sketchfabhttp://creativecommons.org/licenses/by/4.0/Digital
+    clock 3dby Abdullrahman on sketchfabhttp://creativecommons.org/licenses/by/4.0/Vinyl
+    Record with Custom Album by FinnyInTheBinny on sketchfab http://creativecommons.org/licenses/by/4.0/Ceiling
+    Lamp https://skfb.ly/oqQSD by Vince_Crusty on sketchfabhttps://skfb.ly/oqQSDAlbum
+    covers by Patrick on Dall-E 2https://openai.com/dall-e-2Cirlce Glasses LOW POLY
+    by S4FIRA on sketchfabhttps://skfb.ly/o8prQLow-poly Roomba by Seats on sketchfabhttps://skfb.ly/onQPx
+    Game Console by Manuel W. on sketchfab https://skfb.ly/oHnW7 Vinyl player by
+    willemthwing on sketchfab https://skfb.ly/6XKGD Vinyl Record with Custom Album
+    by FinnyInTheBinny  on sketchfab https://skfb.ly/6WUFT Low-Poly Acoustic Guitar 
+    by CatMark 3D Department on sketchfab https://skfb.ly/oAoHR Bottle and Cap by
+    swingonaset on sketchfab https://skfb.ly/6xJHt Laptop by GeniusPilot2016 on sketchfab
+    https://skfb.ly/oGpXs Office Desk  by HippoStance on sketchfab https://skfb.ly/6S9CE
+    Door open and close by amholma on Freesound https://freesound.org/people/amholma/sounds/344360/
+    Pouring a cup of coffee by tlabrant1 on Freesound https://freesound.org/people/tlabrant1/sounds/658711/
+    Clicking sound by Mendenhall02 on Freesound https://freesound.org/people/Mendenhall02/sounds/522722/
+    Coffeemachine by sofiamadeira on Freesound https://freesound.org/people/sofiamadeira/sounds/508692/
+    Footsteps concrete by Pixabay on Pixabay https://pixabay.com/nl/sound-effects/concrete-footsteps-2wav-14794/
+    Footsteps wood by taure on Freesound https://freesound.org/people/taure/sounds/362777/
+    Footsteps grass by jedg on Freesound  https://freesound.org/people/jedg/sounds/505833/
+    Footsteps carpet by MindlessTrails on Freesound https://freesound.org/people/MindlessTrails/sounds/509534/
+    Electic car by Sheyvan on Freesound https://freesound.org/people/Sheyvan/sounds/540241/
+    Electic car by evsecrets on Freesound https://freesound.org/people/evsecrets/sounds/324119/
+    Air filter by Pixanaut on Freesound https://freesound.org/people/Pixanaut/sounds/238967/
+    Male sigh by Samantha_Dolman on Freesound https://freesound.org/people/Samantha_Dolman/sounds/490729/
+    Fabric ripping by HarpyHarpHarp on Freesound https://freesound.org/people/HarpyHarpHarp/sounds/449126/
+    Coughing by hadescolossus on Freesound https://freesound.org/people/hadescolossus/sounds/701162/
+    Bell by kwahmah_02 on Freesound https://freesound.org/people/kwahmah_02/sounds/275072/
+    Vending machine by cmusounddesign on Freesound https://freesound.org/people/cmusounddesign/sounds/84872/
+    Dog barking by LeandiViljoen on Freesound https://freesound.org/people/LeandiViljoen/sounds/501719/
+    White noise by inspectorJ on Freesound https://freesound.org/people/InspectorJ/sounds/485420/
+    Rumble by unfa on Freesound https://freesound.org/people/unfa/sounds/258339/Lamp
+    buzz by an_tony on Freesoundhttps://freesound.org/people/an_tony/sounds/218725/\"Dresser
+    - modern light wood\" (https://skfb.ly/6CoEr) by MozillaHubs is licensed under
+    Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). \"Lounge
+    chair\" (https://skfb.ly/oBZwY) by Jack John is licensed under Creative Commons
+    Attribution (http://creativecommons.org/licenses/by/4.0/). \"Coat Hanger\" (https://skfb.ly/onIWp)
+    by anita.kotlarska is licensed under Creative Commons Attribution-NonCommercial
+    (http://creativecommons.org/licenses/by-nc/4.0/). \"BALASAGUN GOKA DINNER TABLE
+    BASE\" (https://skfb.ly/oqJKE) by balasaguntablelegs is licensed under Creative
+    Commons Attribution (http://creativecommons.org/licenses/by/4.0/). Portes int\xE9rieures
+    lamin\xE9es en nid d'abeille, assembl\xE9es, coupe-feu | Braga S.p.a. | Door
+    design modern, Laminate doors, Doors interior (pinterest.com) Desaturated square
+    gray pavement forming... | Poly: AI Texture Engine (withpoly.com)? Road Marking
+    Texture: Background Images & Pictures (textures.com) Verkeersbord L02 oversteekplaats
+    / zebrapad Kopen? Bestel hier! (informatiebord.nl) Copper Oxidation on Metal
+    \u2013 high-quality wall murals with free shipping \u2013 Photowall Vector Textured
+    The Zebra Crossing Top View Of Crosswalk On Car Road City Street With Pedestrian
+    Crossing For Safety Walk Line Sign Stockvectorkunst en meer beelden van Zebrapad
+    - iStock (istockphoto.com) zebrapad VarioDor MONTANA VDM_MONTANA | Y\u0131ld\u0131z
+    Entegre (yildizentegre.com)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
+  m_sharedMaterial: {fileID: 2213477852536743629, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 4
+  m_fontSizeBase: 4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -58.906815, y: -45.701748, z: -197.84363, w: 260.48843}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &860788560
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860788557}
+  m_CullTransparentMesh: 1
 --- !u!1 &890975992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2962,7 @@ RectTransform:
   m_LocalScale: {x: 2.0611355, y: 2.004034, z: 2.4248652}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 860788558}
   - {fileID: 258314301}
   - {fileID: 2076996507}
   m_Father: {fileID: 77845678}
@@ -2931,7 +3139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -90.26541}
+  m_AnchoredPosition: {x: 0, y: -163}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076996508
@@ -3027,7 +3235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05490196, g: 0.05490196, b: 0.05490196, a: 0.36078432}
+  m_Color: {r: 0.42352942, g: 0.42352942, b: 0.42352942, a: 0.74509805}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
