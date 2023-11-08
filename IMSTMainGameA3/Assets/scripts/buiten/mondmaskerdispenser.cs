@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DialogueEditor;
 
 public class mondmaskerdispenser : MonoBehaviour
 {
+    AudioSource audiosource;
     public suzanne heeftGepraat;
     public Image mondmask;
     public Image geenmondmask;
@@ -12,9 +14,11 @@ public class mondmaskerdispenser : MonoBehaviour
     public GameObject UIUpdate;
     private float activationDistance = 10.0f;
     public Transform player;
+    public AudioClip breek; 
     public bool hasinteracted = false;
     public bool heeftmondmask = false;
     public bool objectivebus = false;
+    public NPCConversation Conversation;
     
 
     private Vector3 originalPosition; // Variabele om de oorspronkelijke positie op te slaan
@@ -27,12 +31,11 @@ public class mondmaskerdispenser : MonoBehaviour
         originalPosition = transform.position;
         // Stel de Z-positie in op -1000
         transform.position = new Vector3(transform.position.x, transform.position.y, -1000);
+        audiosource = GetComponent<AudioSource>();
     }
 
     public void mondmasker()
     {
-        mondmask.enabled = true;
-        geenmondmask.enabled = false;
         heeftmondmask = true;
         hasinteracted = true;
         objectivebus = true;
@@ -64,11 +67,20 @@ public class mondmaskerdispenser : MonoBehaviour
             // Bijwerk de rotatie van het UIUpdate-object om met de speler mee te draaien
             UIUpdate.transform.rotation = Quaternion.Euler(-90, player.rotation.eulerAngles.y, 0);
         }
+
+        if (!ConversationManager.Instance.IsConversationActive && hasinteracted == true && !objectivebus)
+        {
+            objectivebus = true;
+            mondmask.enabled = true;
+            geenmondmask.enabled = false;
+            audiosource.PlayOneShot(breek);
+        }
     }
 
     IEnumerator bloep()
     {
         yield return new WaitForSeconds(0.1f);
         objectivebus = false;
+        // audiosource.PlayOneShot(breek);
     }
 }
