@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class coffeemachine : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class coffeemachine : MonoBehaviour
     public frank frank;
 
     public bool lekkerkoffie = false;
+    public bool airobjective = false;
+    public bool poep = false;
     AudioSource audiosource;
     private float activationDistance = 5.0f;
 
@@ -16,10 +19,13 @@ public class coffeemachine : MonoBehaviour
     GetComponent<BoxCollider>().enabled = false;
     audiosource = GetComponent<AudioSource>();
     UIUpdate.SetActive(false);
+        poep = false;
     }
 
     public void interact() {
         lekkerkoffie = true;
+        poep = true;
+
     }
 
     void Update() {
@@ -51,5 +57,11 @@ GetComponent<BoxCollider>().enabled = true;
         // Reset de schaal naar positieve waarden
         // UIUpdate.transform.localScale = new Vector3(1, 1, 1);
     }
+
+         if (!ConversationManager.Instance.IsConversationActive && poep == true)
+        {
+            airobjective = true;
+            poep = false;
+        }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class luchtfilter : MonoBehaviour
 {
@@ -8,7 +9,10 @@ public class luchtfilter : MonoBehaviour
     public Transform player; // Player reference
     public coffeemachine koffie; // Assuming coffeemachine is the correct class
     public bool ending = false;
+    public bool objectiveend = false;
     private float activationDistance = 5.0f;
+    public NPCConversation Conversation;
+    private bool poep;
 
     void Start()
     {
@@ -18,6 +22,8 @@ public class luchtfilter : MonoBehaviour
     public void Interact() {
         
         ending = true;
+    
+        poep = true;
     }
 
     void Update()
@@ -45,6 +51,12 @@ public class luchtfilter : MonoBehaviour
 
             // Reset the scale to positive values
             UIUpdate.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+                 if (!ConversationManager.Instance.IsConversationActive && poep == true)
+        {
+            poep = false;
+            objectiveend = true;
         }
     }
 }
