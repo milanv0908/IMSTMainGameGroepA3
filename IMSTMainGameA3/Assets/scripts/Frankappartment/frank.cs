@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class frank : MonoBehaviour
 {
-        public luchtfilter filter;
+public luchtfilter filter;
 public bool hasinteracted1 = false;
 public bool newobjective = false;
 public bool isused = false;

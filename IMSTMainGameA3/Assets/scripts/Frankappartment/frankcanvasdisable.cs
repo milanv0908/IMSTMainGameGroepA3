@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class frankcanvasdisable : MonoBehaviour
 {
     public Canvas canvas; // Reference to the Canvas component. Assign the Canvas in the Inspector.
+    public frank Frank;
     public switchcamerascene2 jot;
 
     void Start()
@@ -23,9 +24,13 @@ public class frankcanvasdisable : MonoBehaviour
 
     private void Update()
     {
-        if (jot.eind == true && canvas != null)
+        if (jot.eind == true && canvas != null && Frank.beginend == false)
         {
             canvas.enabled = true;
+        }
+
+        if (Frank.beginend == true) {
+            canvas.enabled = false;
         }
     }
 }

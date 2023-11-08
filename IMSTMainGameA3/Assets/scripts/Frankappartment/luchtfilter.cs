@@ -31,7 +31,7 @@ public class luchtfilter : MonoBehaviour
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-            if (distanceToPlayer <= activationDistance && koffie.lekkerkoffie == true)
+            if (distanceToPlayer <= activationDistance && koffie.lekkerkoffie == true && ending == false)
             {
                 UIUpdate.SetActive(true);
             }
