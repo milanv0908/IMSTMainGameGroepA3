@@ -20,7 +20,13 @@ public class questmarkersuzanne : MonoBehaviour, IQuestMarker
     public Sprite Icon { get { return icon; } }
     public Image Image { get { return image; } }
 
+     private Vector3 originalPosition; // Variabele om de oorspronkelijke positie op te slaan
+
         void Start() {
+
+             originalPosition = transform.position;
+        // Stel de Z-positie in op -1000
+        transform.position = new Vector3(transform.position.x, transform.position.y, -1000);
 
         StartCoroutine(uit());
 
@@ -58,6 +64,7 @@ public class questmarkersuzanne : MonoBehaviour, IQuestMarker
     {
         if (peterInteractScript.PeterTalked == true && tateInteractScript.TateTalked == true && gertInteractScript.GertTalked == true && heeftshits == false)
         {
+              transform.position = originalPosition;
             AddMarker();
             Debug.Log("huts");
             heeftshits = true;

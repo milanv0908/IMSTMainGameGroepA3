@@ -15,7 +15,7 @@ public class suzanne : MonoBehaviour
     public GameObject UIUpdate; // Het gameobject met de Image-component
     public Transform player; // Spelerreferentie
 
-
+    
 
      void Update(){
          if (player != null)
