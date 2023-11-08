@@ -6,6 +6,7 @@ using TMPro;
 
 public class objectivefrank : MonoBehaviour
 {
+
     public frank Frank;
     public TextMeshProUGUI text;
     void Start()
@@ -16,6 +17,7 @@ public class objectivefrank : MonoBehaviour
 
     void Update()
     {
+        
         if (Frank.newobjective == true) {
             text.text = "Objective: Set a cup of Coffee.";
             Debug.Log("newobjective");
