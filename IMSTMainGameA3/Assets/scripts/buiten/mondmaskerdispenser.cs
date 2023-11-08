@@ -8,13 +8,14 @@ public class mondmaskerdispenser : MonoBehaviour
     public suzanne heeftGepraat;
     public Image mondmask;
     public Image geenmondmask;
+
     public GameObject UIUpdate;
     private float activationDistance = 10.0f;
     public Transform player;
     public bool hasinteracted = false;
-
     public bool heeftmondmask = false;
     public bool objectivebus = false;
+    
 
     private Vector3 originalPosition; // Variabele om de oorspronkelijke positie op te slaan
 
