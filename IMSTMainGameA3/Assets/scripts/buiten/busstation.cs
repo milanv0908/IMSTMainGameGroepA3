@@ -9,8 +9,7 @@ public class busstation : MonoBehaviour
 {
     public Image image;
     AudioSource audiosource;
-    public AudioClip busvertrek;
-    public AudioClip busaankomst;
+    public AudioClip cutscene;
     public GameObject UIUpdate; // Het gameobject met de Image-component
     public Transform player; // Spelerreferentie
     private float activationDistance = 10.0f;
@@ -26,7 +25,7 @@ public class busstation : MonoBehaviour
 public void wachtenopdebus() {
         if (mondmask.heeftmondmask == true){
             image.enabled = true;
-            audiosource.PlayOneShot(busvertrek);
+            audiosource.PlayOneShot(cutscene);
             StartCoroutine(frank());
             playanimation = true;
             Debug.Log("huts");
