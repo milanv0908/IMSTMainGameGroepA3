@@ -688,7 +688,7 @@ PrefabInstance:
       addedObject: {fileID: 1497631428}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3d81d77b15f5ffa43ac34e81da11c758, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1092332410}
+      addedObject: {fileID: 672462432}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d81d77b15f5ffa43ac34e81da11c758, type: 3}
       insertIndex: -1
@@ -797,16 +797,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":729,"yPos":366},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    didn''t know frank was a gamer.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":288,"yPos":251.000015},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    didn''t know frank was a gamer.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   NodeSerializedDataList:
   - {fileID: 1497631427}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
+  ContinueFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85bad71a1ddb2d468149ecafbed16f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIUpdate: {fileID: 1092332408}
+  UIUpdate: {fileID: 672462431}
   player: {fileID: 1116586566}
   koffie: {fileID: 1622998211}
 --- !u!1 &83147326
@@ -2853,7 +2853,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &321665794
@@ -2872,7 +2872,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 3
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &321665795
@@ -2891,9 +2891,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 2
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &321665796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,7 +2910,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 1
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &321665797
@@ -2929,7 +2929,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 5
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!114 &321665798
@@ -2948,7 +2948,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 4
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!4 &325883022 stripped
@@ -4737,18 +4737,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   CurrentIDCounter: 6
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":329,"yPos":-29},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wow,
-    I haven''t seen one of these in ages!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":329,"yPos":113.200012},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":387,"yPos":-93.9999847},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wow,
+    I haven''t seen one of these in ages!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":387,"yPos":50.2000122},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
     it was my moms, but when they moved they didn''t need it anymore and I was in
-    desperate need of one.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":366,"yPos":252.200012},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Right,
-    cause the newer buildings have filters built within.","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":381,"yPos":390.2},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yup,
-    but that good old thing and keeping the windows closed works perfect for me.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":394,"yPos":516.2},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"But
-    enough about that, are you coming to join me?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":398,"yPos":638.2},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah
+    desperate need of one.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":424,"yPos":189.200012},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Right,
+    cause the newer buildings have filters built within.","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":440,"yPos":326.2},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yup,
+    but that good old thing and keeping the windows closed works perfect for me.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":452,"yPos":453.2},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+    enough about that, are you coming to join me?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":457,"yPos":574.2},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah
     I am coming","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   NodeSerializedDataList:
   - {fileID: 321665793}
   - {fileID: 321665796}
@@ -4756,8 +4756,8 @@ MonoBehaviour:
   - {fileID: 321665794}
   - {fileID: 321665798}
   - {fileID: 321665797}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
+  ContinueFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -4965,6 +4965,85 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6868657989003568245, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
   m_PrefabInstance: {fileID: 7698426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &672462430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 82262729}
+    m_Modifications:
+    - target: {fileID: 6256426373270134827, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_Name
+      value: UIParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.6883926
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.6883926
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.6883926
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.948975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1097608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2542427
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.10489221
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.17188305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.69927937
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6859025
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 264.463
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -89.99298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.993
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+--- !u!1 &672462431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6868657989003568245, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+  m_PrefabInstance: {fileID: 672462430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &672462432 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8881764440984823438, guid: 5d291944a2215ea4c9239e8222f15974, type: 3}
+  m_PrefabInstance: {fileID: 672462430}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &684582957
 GameObject:
@@ -7458,90 +7537,6 @@ MonoBehaviour:
   TMPFont: {fileID: 11400000, guid: 41235a8f02405a643814850d2baac187, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!1 &1092332408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1092332410}
-  - component: {fileID: 1092332409}
-  m_Layer: 0
-  m_Name: UItest 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1092332409
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092332408}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aa7d1697669c2194aafd3d7c4937eefd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.98, y: 7.35}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1092332410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092332408}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.98061615, z: -0, w: 0.19593872}
-  m_LocalPosition: {x: 0.3157342, y: 2.0913184, z: 0.2893229}
-  m_LocalScale: {x: 0.42041287, y: 0.42041293, z: 0.42041287}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 82262729}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1109593522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8233,7 +8228,7 @@ Transform:
   m_GameObject: {fileID: 1188920425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0.31}
+  m_LocalPosition: {x: 0, y: 1, z: 0.501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8918,7 +8913,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!4 &1269718641
@@ -8952,7 +8947,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 1
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!1 &1274811694 stripped
@@ -10610,7 +10605,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!4 &1497631428
 Transform:
   m_ObjectHideFlags: 0
@@ -10696,16 +10691,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":531,"yPos":188},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
-    god I have a dishwasher.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":475,"yPos":283},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Thank
+    god I have a dishwasher.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   NodeSerializedDataList:
   - {fileID: 2078462723}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
+  ContinueFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -11400,19 +11395,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   CurrentIDCounter: 2
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":362,"yPos":175},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"\"Hmm,
-    it''s been a while since I''ve used one of these.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":355,"yPos":317.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":429,"yPos":326},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hmm,
+    it''s been a while since I''ve used one of these.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":422,"yPos":468.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
     William, would you mind turning the air filter on? It seems to have malfunctioned.
     It is right next to the TV.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: b617094ec585e5145920fb107049c793, type: 3}
-  DefaultFont: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   NodeSerializedDataList:
   - {fileID: 1269718640}
   - {fileID: 1269718642}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
+  ContinueFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -13450,7 +13445,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 8f90ac4c2a31ae74eaad0dcd63063418, type: 2}
   Icon: {fileID: 21300000, guid: 7c96fb05ebb7fb54385ded4273332afc, type: 3}
   Audio: {fileID: 8300000, guid: e5e06df975efad942a6591db104e3416, type: 3}
 --- !u!4 &2078462724
@@ -14431,10 +14426,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
   CurrentIDCounter: 4
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":431,"yPos":132},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
-    Frank, I''m so sorry to ask, but would you mind if I made myself a cup of coffee?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":417,"yPos":280.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure!
-    The coffeemaker is over on your right.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":416,"yPos":403.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks,
-    you keep playing in the meantime. Do you want cofee too?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":409,"yPos":540.2},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":411,"yPos":151},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    Frank, I''m so sorry to ask, but would you mind if I made myself a cup of coffee?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":396,"yPos":299.2},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure!
+    The coffeemaker is over on your right.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":396,"yPos":423.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks,
+    you keep playing in the meantime. Do you want coffee too?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"William","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":389,"yPos":560.2},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"No
     I''m good, I''m way too focussed right now.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Frank","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: 
