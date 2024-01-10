@@ -48,6 +48,7 @@ public void interacting() {
                         UIUpdate.SetActive(false);
                         filter.ending = false;
                         animation = true;
+                        audiosource.enabled = false;
                 }
               
 }

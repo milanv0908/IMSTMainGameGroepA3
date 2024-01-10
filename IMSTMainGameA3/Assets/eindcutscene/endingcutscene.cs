@@ -23,7 +23,7 @@ public class endingcutscene : MonoBehaviour
 
         IEnumerator end() {
         yield return new WaitForSeconds(13);
-        SceneManager.LoadScene("start menu", LoadSceneMode.Single);
+        SceneManager.LoadScene("WilliamAppartement", LoadSceneMode.Single);
 
 }
 }
