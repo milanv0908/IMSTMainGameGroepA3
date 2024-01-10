@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/dialogue test a niffo.unity
+    guid: 23ac44dc7c4ccd043aa4c65025d837e5
+  - enabled: 1
     path: Assets/Scenes/ExpansionPack.unity
     guid: 319dafa5c80f29f428dc1e0d03f04177
   - enabled: 1
