@@ -11,6 +11,7 @@ public class TV : MonoBehaviour
     public Image image1;
     public Image image2;
     public Image image3;
+    public voice Voice;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class TV : MonoBehaviour
             image2.enabled = true;
             image3.enabled = false;
             image1off = false;
+            Voice.buttonpress = true;
             StartCoroutine(nextpage());
        }
     }
@@ -43,6 +45,7 @@ public class TV : MonoBehaviour
         image1.enabled = false;
         image2.enabled = false;
         image3.enabled = true;
+        Voice.diagnosis = true;
         
         
     
