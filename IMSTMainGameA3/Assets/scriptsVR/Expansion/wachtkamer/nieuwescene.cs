@@ -11,7 +11,7 @@ public class nieuwescene : MonoBehaviour
 
     IEnumerator nextscene()
     {
-        yield return new WaitForSeconds(120);
+        yield return new WaitForSeconds(60);
         SceneManager.LoadScene("Expansionscene2");
     }
 }
