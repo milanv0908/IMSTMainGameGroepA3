@@ -395,6 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image1off: 0
   image2off: 0
+  haspressed: 0
   image1: {fileID: 585712542}
   image2: {fileID: 1447436597}
   image3: {fileID: 609952033}
@@ -1336,7 +1337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8920c91f491c1b448b1d2d5d5004db14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c38f06e71d533b4c83f707d7efa4806, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
