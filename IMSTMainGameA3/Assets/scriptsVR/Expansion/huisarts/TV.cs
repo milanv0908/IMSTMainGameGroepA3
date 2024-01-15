@@ -67,6 +67,7 @@ public class TV : MonoBehaviour
         image2.enabled = false;
         image3.enabled = true;
         add.enabled = false;
+        Voice.diagnosis = true;
         video.Pause();
     }
 }
