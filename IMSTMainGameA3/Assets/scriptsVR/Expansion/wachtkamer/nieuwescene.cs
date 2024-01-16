@@ -4,14 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class nieuwescene : MonoBehaviour
 {
+    Animator animator;
     void Start()
     {
         StartCoroutine(nextscene());
+        animator = GetComponent<Animator>(); 
     }
 
     IEnumerator nextscene()
     {
         yield return new WaitForSeconds(60);
-        SceneManager.LoadScene("Expansionscene2");
+        animator.SetTrigger("open");
     }
 }
