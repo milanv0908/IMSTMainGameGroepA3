@@ -30,13 +30,14 @@ public class TV : MonoBehaviour
 
     void Update()
     {
-        if (image1off)
+        if (image1off == true && haspressed == false)
         {
             image1.enabled = false;
             image2.enabled = true;
             image3.enabled = false;
             image1off = false;
             Voice.buttonpress = true;
+            haspressed = true;
             StartCoroutine(nextpage());
         }
     }
