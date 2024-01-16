@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class nieuwescene : MonoBehaviour
 {
     Animator animator;
+    public bool newscene = false;
     void Start()
     {
         StartCoroutine(nextscene());
@@ -15,5 +16,6 @@ public class nieuwescene : MonoBehaviour
     {
         yield return new WaitForSeconds(60);
         animator.SetTrigger("open");
+        newscene = true;
     }
 }
