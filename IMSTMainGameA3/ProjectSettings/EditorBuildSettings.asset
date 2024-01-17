@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR/Expansionscene2.unity
     guid: 968fc305b77f1934fa8667b6f7a5579c
+  - enabled: 1
+    path: Assets/Scenes/VR/buitenkut.unity
+    guid: 6944d0174042afd49bc76fff90ea14c1
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2a31f2b745f6a1b438a3a7c88625574c, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5a506b8b147442f4d9e882e4d76c18fb, type: 2}
