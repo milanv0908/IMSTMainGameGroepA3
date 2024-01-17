@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class nextscene : MonoBehaviour
 {
 void OnTriggerEnter() {
-    SceneManager.LoadScene("?");
+    SceneManager.LoadScene("buitenkut");
 }
 }
