@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class restart : MonoBehaviour
+public class StartGame : MonoBehaviour
 {
-public void restar() {
-    SceneManager.LoadScene("mainmenu");
+public void start() {
+    SceneManager.LoadScene("Expansionbuiten");
 }
 }
