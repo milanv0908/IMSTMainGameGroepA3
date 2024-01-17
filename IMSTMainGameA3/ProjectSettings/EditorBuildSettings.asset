@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/VR/allahu akbar.unity
     guid: 410a89829828ef14fa1a8608723c9640
   - enabled: 1
-    path: Assets/Scenes/VR/Expension buiten.unity
+    path: Assets/Scenes/VR/Expansionbuiten.unity
     guid: 0b0a4e3f952171148be797e56a755eb0
   - enabled: 1
     path: Assets/Scenes/VR/ExpansionPack.unity
