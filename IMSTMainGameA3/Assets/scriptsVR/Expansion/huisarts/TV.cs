@@ -14,6 +14,7 @@ public class TV : MonoBehaviour
     public Image image1;
     public Image image2;
     public Image image3;
+    public Image image4;
     public RawImage add;
     public VideoPlayer video;
     public voice Voice;
@@ -23,6 +24,7 @@ public class TV : MonoBehaviour
         image1.enabled = true;
         image2.enabled = false;
         image3.enabled = false;
+        image4.enabled = false;
         add.enabled = false;
 
         // Ensure that the VideoPlayer is set to not play on awake
@@ -36,6 +38,7 @@ public class TV : MonoBehaviour
             image1.enabled = false;
             image2.enabled = true;
             image3.enabled = false;
+            image4.enabled = false;
             image1off = false;
             Voice.buttonpress = true;
             haspressed = true;
@@ -57,6 +60,7 @@ public class TV : MonoBehaviour
         image1.enabled = false;
         image2.enabled = false;
         image3.enabled = false;
+        image4.enabled = false;
         add.enabled = true;
         video.Play();
         StartCoroutine(endadd());
@@ -68,6 +72,7 @@ public class TV : MonoBehaviour
         image1.enabled = false;
         image2.enabled = false;
         image3.enabled = true;
+        image4.enabled = false;
         add.enabled = false;
         Voice.diagnosis = true;
         video.Pause();
@@ -75,7 +80,13 @@ public class TV : MonoBehaviour
     }
 
     IEnumerator ending() {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
+        image1.enabled = false;
+        image2.enabled = false;
+        image3.enabled = false;
+        image4.enabled = true;
+        Voice.headsetoff = true;
+        add.enabled = false;
         leave = true;
         Debug.Log("hutsa");
     }
