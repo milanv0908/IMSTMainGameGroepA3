@@ -10,6 +10,7 @@ public class TV : MonoBehaviour
     public bool image2off = false;
     public bool haspressed = false;
     public bool playadd = false;
+    public bool leave = false;
     public Image image1;
     public Image image2;
     public Image image3;
@@ -70,5 +71,12 @@ public class TV : MonoBehaviour
         add.enabled = false;
         Voice.diagnosis = true;
         video.Pause();
+        StartCoroutine(ending());
+    }
+
+    IEnumerator ending() {
+        yield return new WaitForSeconds(10);
+        leave = true;
+        Debug.Log("hutsa");
     }
 }
