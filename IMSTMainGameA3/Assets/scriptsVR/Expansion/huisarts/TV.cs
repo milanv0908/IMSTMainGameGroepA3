@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class TV : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class TV : MonoBehaviour
 
         // Ensure that the VideoPlayer is set to not play on awake
         video.playOnAwake = false;
+        leave = false;
     }
 
     void Update()
@@ -51,6 +53,11 @@ public class TV : MonoBehaviour
         if (!haspressed)
         {
             image1off = true;
+        }
+
+        if (leave == true) {
+SceneManager.LoadScene("mainmenu");
+
         }
     }
 
