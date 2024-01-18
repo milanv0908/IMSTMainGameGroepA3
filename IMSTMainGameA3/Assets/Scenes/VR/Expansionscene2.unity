@@ -1277,12 +1277,12 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
+  Priority: 0
+  DopplerLevel: 5
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   start: {fileID: 8300000, guid: 24ce05c46718ec64e95437cca8ba01ca, type: 3}
   scan: {fileID: 8300000, guid: 33760895eb772fb4481f31e1e6cd41d7, type: 3}
   diagnosistext: {fileID: 8300000, guid: 79bbb9dfa2285e14dab2c10bae7ea40d, type: 3}
-  headsetof: {fileID: 0}
+  headsetof: {fileID: 8300000, guid: 11a4a137943af3a42a22e9e039e58729, type: 3}
   buttonpress: 0
   diagnosis: 0
   headsetoff: 0
