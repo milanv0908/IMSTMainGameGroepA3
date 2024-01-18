@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR/mainmenu.unity
     guid: 4f8927b7fce2cfb45ba11445f0e08694
-  - enabled: 1
-    path: Assets/Scenes/VR/Expansionscene2.unity
-    guid: 968fc305b77f1934fa8667b6f7a5579c
   - enabled: 0
     path: Assets/Scenes/VR/allahu akbar.unity
     guid: 410a89829828ef14fa1a8608723c9640
@@ -24,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/VR/ExpansionPack.unity
     guid: 319dafa5c80f29f428dc1e0d03f04177
   - enabled: 1
+    path: Assets/Scenes/VR/Expansionscene2.unity
+    guid: 968fc305b77f1934fa8667b6f7a5579c
+  - enabled: 0
     path: Assets/Scenes/dialogue test a niffo.unity
     guid: 23ac44dc7c4ccd043aa4c65025d837e5
   - enabled: 0
