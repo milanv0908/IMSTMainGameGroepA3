@@ -9,9 +9,11 @@ public class voice : MonoBehaviour
     public AudioClip start;
     public AudioClip scan;
     public AudioClip diagnosistext;  // Corrected variable name
+    public AudioClip diagnosistext2;
     public AudioClip headsetof;
     public bool buttonpress = false;
     public bool diagnosis = false;   // Corrected variable name
+    public bool diagnosis2 = false;
     public bool headsetoff = false;
 
     void Start() {
@@ -29,6 +31,13 @@ public class voice : MonoBehaviour
             audiosource.PlayOneShot(diagnosistext);
             diagnosis = false;
         }
+
+        if (diagnosis2) {
+            audiosource.PlayOneShot(diagnosistext2);
+            diagnosis2 = false;
+        }
+
+
 
         if(headsetoff) {
             audiosource.PlayOneShot(headsetof);

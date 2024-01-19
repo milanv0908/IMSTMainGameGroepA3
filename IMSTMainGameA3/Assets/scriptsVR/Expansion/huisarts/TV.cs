@@ -15,6 +15,7 @@ public class TV : MonoBehaviour
     public Image image1;
     public Image image2;
     public Image image3;
+    public Image Image35;
     public Image image4;
     public RawImage add;
     public VideoPlayer video;
@@ -25,6 +26,7 @@ public class TV : MonoBehaviour
         image1.enabled = true;
         image2.enabled = false;
         image3.enabled = false;
+        Image35.enabled = false;
         image4.enabled = false;
         add.enabled = false;
 
@@ -40,6 +42,7 @@ public class TV : MonoBehaviour
             image1.enabled = false;
             image2.enabled = true;
             image3.enabled = false;
+            Image35.enabled = false;
             image4.enabled = false;
             image1off = false;
             Voice.buttonpress = true;
@@ -66,34 +69,52 @@ SceneManager.LoadScene("mainmenu");
         yield return new WaitForSeconds(10);
         image1.enabled = false;
         image2.enabled = false;
-        image3.enabled = false;
-        image4.enabled = false;
-        add.enabled = true;
-        video.Play();
-        StartCoroutine(endadd());
-
-    }
-
-    IEnumerator endadd() {
-        yield return new WaitForSeconds(10);
-        image1.enabled = false;
-        image2.enabled = false;
         image3.enabled = true;
         image4.enabled = false;
         add.enabled = false;
         Voice.diagnosis = true;
-        video.Pause();
+        // video.Play();
+        StartCoroutine(beginadd());
+
+    }
+
+    IEnumerator beginadd() {
+        yield return new WaitForSeconds(2);
+        image1.enabled = false;
+        image2.enabled = false;
+        image3.enabled = false;
+        image4.enabled = false;
+        add.enabled = true;
+        Voice.diagnosis = false;
+        video.Play();
         StartCoroutine(ending());
     }
 
     IEnumerator ending() {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         image1.enabled = false;
         image2.enabled = false;
         image3.enabled = false;
+        Image35.enabled = true;
+        image4.enabled = false;
+        Voice.diagnosis2 = true;
+        add.enabled = false;
+        video.Pause();
+        leave = false;
+        Debug.Log("hutsa");
+        StartCoroutine(diagnosis());
+    }
+
+        IEnumerator diagnosis() {
+        yield return new WaitForSeconds(7);
+        image1.enabled = false;
+        image2.enabled = false;
+        image3.enabled = false;
+        Image35.enabled = false;
         image4.enabled = true;
         Voice.headsetoff = true;
         add.enabled = false;
+        video.Pause();
         leave = true;
         Debug.Log("hutsa");
     }
