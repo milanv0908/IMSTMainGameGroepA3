@@ -91,7 +91,7 @@ SceneManager.LoadScene("mainmenu");
     }
 
     IEnumerator ending() {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(28);
         image1.enabled = false;
         image2.enabled = false;
         image3.enabled = false;
