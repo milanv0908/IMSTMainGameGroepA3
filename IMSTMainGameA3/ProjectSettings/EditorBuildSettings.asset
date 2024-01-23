@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Buiten.unity
     guid: a3221aa3fd53d594284bb10d3cccbcc9
+  - enabled: 0
+    path: Assets/Scenes/VR/demo scene a niffo.unity
+    guid: f3919155fe6217d4b94600f5be52d9f1
   - enabled: 1
     path: Assets/Scenes/VR/mainmenu.unity
     guid: 4f8927b7fce2cfb45ba11445f0e08694
