@@ -59,7 +59,7 @@ public class TV : MonoBehaviour
         }
 
         if (leave == true) {
-SceneManager.LoadScene("mainmenu");
+SceneManager.LoadScene("Expansionbuiten");
 
         }
     }
